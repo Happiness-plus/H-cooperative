@@ -1,4 +1,4 @@
-/* just dropping some stuff */
+/* Nav bar stuff, might change to blue */
 ul {
     list-style-type: none;
     margin: 0;
@@ -26,3 +26,25 @@ ul {
   .active {
     background-color: #04AA6D;
   }
+
+  .glass{
+    background: rgba(11,199,255,0.5) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+ 
+  #hero{
+    background-image: url("img/school-outside.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black; 
+    font-weight: bolder;
+  }
+
+
+  
+
