@@ -67,7 +67,9 @@ ul {
   }
 
   h2{
-    font-weight: bolder !important
+    font-weight: bolder !important;
+    /* color:#FFB4B4; */
+
   }
 
  
