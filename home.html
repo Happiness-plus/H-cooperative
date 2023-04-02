@@ -22,25 +22,27 @@
 
 
 <body>
-    <header>
-        <nav class="navbar">
+    <header style="background-color: #B2A4FF; color: #FDF7C3 ;">
+        <nav class="navbar" >
             <div class="container-fluid">
               <!-- switch to data lazy once I get lazy loading -->
               <!-- <img src="img/Logo.webp" alt="Watercress Studios" height="50px" width="50px"> -->
-              <h2>Hentai Collective</h2>
-              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #3777e9 ;"
+              <h1>Hentai Cooperative</h1>
+              <!-- Former color -->
+              <!-- style="color: #3777e9 ; -->
+              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
                 data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
               </button>
             </div>
           </nav>
-        <div class="collapse glass" id="navbarToggleExternalContent"> 
+        <div class="collapse" id="navbarToggleExternalContent"> 
             <div class="shadow-3 p-4">
-              <button class="btn btn-link btn-block m-0 border-bottom"><a href="index.html">Home</a></button>
-              <button class="btn btn-link btn-block m-0 border-bottom"><a href="goals.html">About Us</a></button>
-              <button class="btn btn-link btn-block m-0 border-bottom"><a href="people.html">Our People</a></button>
-              <button class="btn btn-link btn-block m-0 border-bottom"> <a href="values.html">Our Values</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="index.html">Home</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="goals.html">About Us</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="people.html">Our People</a></button>
+              <button class="btn btn-link btn-block m-0"> <a href="values.html">Our Values</a></button>
             </div>
             </div>
         </header>
@@ -48,18 +50,24 @@
     <section id="hero">
         <div class="row container">
             <div class="col">
-                <img src="img/teacher.png" height="700px" width="466px">
+                <img src="img/teacher.png" height="739px" width="466px">
             </div>
             <div class="col">
                 <h1>We make quality hentai</h1>
-                <!-- Animate it  -->
+                <p>We're a cooperative of talented and hard working creators</p>
+                <a class="btn btn-lg m-2 hoverable animate__animated animate__zoomIn animate__delay-4s" href="#our_work" role="button" id="LearnMore" 
+                style="background-color: #FFB4B4; font-weight: bolder; color: white;">Learn More</a>
             </div>
         </div>
         
     </section>
     <!-- Basically why they should hire us and our track record -->
     <section id="our_work">
-        
+        <div class="container text-center py-4 align-items-center">
+            <h1>Why work with us?</h1>
+            <p>We have a solid track record of delivering several eroge</p>
+            
+        </div>
     </section>
     <!-- The last step -->
     <section id="contact">
@@ -67,8 +75,13 @@
     </section>
 
 </body>
-<footer >
-
+<footer>
+<div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <br>
+    <p>2023 Hentai Cooperative LLC</p>
+</div>
 </footer>
 <!-- MDB -->
 <script
