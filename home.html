@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />    
     <link rel="preload" href="main.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
 
 </head>
-<!-- <nav>
-    <ul>
-        <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="goals.html"> Our Goals</a></li>
-        <li><a href="people.html">Our People</a></li>
-        <li><a href="values.html">Our Values</a></li>
-      </ul>      
-</nav> -->
-
 
 <body>
     <header style="background-color: #B2A4FF; color: #FDF7C3 ;">
@@ -52,28 +50,89 @@
             <div class="col">
                 <img src="img/teacher.png" height="739px" width="466px">
             </div>
-            <div class="col">
-                <h1>We make quality hentai</h1>
-                <p>We're a cooperative of talented and hard working creators</p>
-                <a class="btn btn-lg m-2 hoverable animate__animated animate__zoomIn animate__delay-4s" href="#our_work" role="button" id="LearnMore" 
+            <div class="col text-center py-4 align-items-center">
+                <h1 id="title">We make quality hentai</h1>
+                <p>We're a worker-owned cooperative of talented and hard working creators</p>
+                <a class="btn btn-lg m-2 hoverable animate__animated animate__zoomIn animate__delay-4s" href="#services" role="button" id="LearnMore" 
                 style="background-color: #FFB4B4; font-weight: bolder; color: white;">Learn More</a>
             </div>
         </div>
         
     </section>
     <!-- Basically why they should hire us and our track record -->
-    <section id="our_work">
+    <section id="services">
         <div class="container text-center py-4 align-items-center">
-            <h1>Why work with us?</h1>
-            <p>We have a solid track record of delivering several eroge</p>
-            
+            <h2>
+                Our Services
+                <hr>
+            </h2>
+            <div class="row">
+                <div class="col">
+                    <i class="fas fa-users"></i>
+                    <h3>Talent Placement</h3>
+                    <p>We recruit top tier talent for your website. All applicants have eroge industry experience. </p>
+                </div>
+                <div class="col">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Consulting</h3>
+                    <p>We offer managment Consulting to various eroge firms</p>
+                </div>
+                <div class="col">
+                    <i class="fa fa-code" aria-hidden="true"></i>                    
+                    <h3>Game, Visual Novel, or Website development</h3>
+                    <p>We have a community of coders, artists, translaters, musicians, </p>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- The last step -->
-    <section id="contact">
-        
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                <h2 class="fw-bolder">Get in touch</h2>
+                <p class="lead mb-0">We'd love to hear from you</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    
+                    <form id="contactForm"  action="https://formspree.io/f/mbjblpnl"
+                    method="POST">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" name="fullname" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Discord name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A Discord name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"  name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                       
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-
 </body>
 <footer>
 <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
