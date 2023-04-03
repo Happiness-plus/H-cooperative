@@ -35,9 +35,13 @@ ul {
     } */
   #title{
     font-family: 'Petit Formal Script', cursive;
-    color: #FFB4B4;
+    color: black;
     font-size: 100px;
-  }  
+  }
+  
+  #teacher1{
+    display: none;
+  }
   #navbarToggleExternalContent a{
     font-weight: bolder;
     color: black;
@@ -57,13 +61,14 @@ ul {
     width: 100%;
     height: 100vh;
     color: #111;
-    background-color: #b2a4ff;
+    background-color: black;
     /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fdf7c3' fill-opacity='0.82'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
   }
 
   #services h2{
     font-family: 'Petit Formal Script', cursive;
     font-size: 50px;
+    color: white;
 
   }
 
@@ -74,8 +79,13 @@ ul {
     background-color: #FFB4B4;
 
   }
-  #development{
+  #gamedev{
     background-color: #FDF7C3;
+
+  }
+
+  #webdev{
+    background-color: #b2a4ff;
 
   }
 
@@ -109,6 +119,14 @@ ul {
     font-size: 50px;
   }
 
+  #submitButton{
+    background-color: #FFB4B4;
+    color: black;
+    font-weight: bolder;
+    font-size: 19px;
+    text-transform: capitalize;
+  }
+
   footer{
     background-color: #111;
     color: white;
@@ -119,12 +137,21 @@ ul {
   footer i {
     font-size: 20px;
   }
+  
 
   /* Media query time */
 
   @media only screen and (max-width: 992px) {
-    img{
+    #teacher{
       display: none;
+    }
+
+    #title{
+      font-size: 50px;
+    }
+
+    #teacher1{
+      display: inherit;
     }
     
   }

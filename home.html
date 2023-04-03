@@ -50,13 +50,14 @@
     <section id="hero">
         <div class="row container">
             <div class="col">
-                <img src="img/teacher.png" height="739px" width="466px">
+                <img id="teacher" src="img/teacher.png" height="739px" width="466px">
             </div>
             <div class="col text-center py-4 align-items-center">
                 <h1 id="title">We make quality hentai</h1>
                 <h2>We're a worker-owned cooperative of talented and hard working creators</h2>
                 <a class="btn btn-lg m-2 hoverable animate__animated animate__zoomIn animate__delay-4s" href="#services" role="button" id="LearnMore" 
                 style="background-color: #FFB4B4; font-weight: bolder; color: white;">Learn More</a>
+                <img id="teacher1" src="img/teacher.png" height="450px" width="300px">
             </div>
         </div>
         
@@ -72,7 +73,7 @@
                     <br>
                     <i class="fas fa-users"></i>
                     <h3>Talent Placement</h3>
-                    <p>We recruit top tier talent for your website. All applicants have eroge industry experience.</p>
+                    <p>We recruit top tier talent for your business. All applicants have eroge industry experience.</p>
                 </div>
                 <div class="col" id="consulting">
                     <br>
@@ -80,13 +81,21 @@
                     <h3>Consulting</h3>
                     <p>We offer managment Consulting to various eroge firms.</p>
                 </div>
-                <div class="col" id="development">
+            </div>
+            <div class="row">
+                <div class="col" id="gamedev">
                     <br>
                     <i class="fa fa-code" aria-hidden="true"></i>                    
-                    <h3>Game, Visual Novel, or Website development</h3>
+                    <h3>Game and/or Visual Novel Development</h3>
                     <p>We have a community of coders, artists, translaters, musicians, and writers that can create your next profitable product/service</p>
                 </div>
-
+                <div class="col" id="webdev">
+                    <br>
+                    <i class="fa fa-code" aria-hidden="true"></i>                    
+                    <h3>Web Development and/or maintenance</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur. Harum, commodi voluptapedita dolores neque itaque numquam reiciendis quae aspernatur dignissimos! Necessitatibus, at?</p>
+                    
+                </div>
             </div>
         </div>
     </section>
@@ -107,6 +116,7 @@
                     method="POST">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
+                            <!-- Add an input mask -->
                             <input class="form-control" id="name" type="text" name="fullname" placeholder="Enter your name..." data-sb-validations="required" />
                             <label for="name">Discord name</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A Discord name is required.</div>
@@ -115,15 +125,16 @@
                         <div class="form-floating mb-3">
                             <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
                             <label for="email">Email address</label>
+                            <!-- Add an input mask -->
                             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <!-- Phone number input-->
-                        <div class="form-floating mb-3">
+                        <!-- <div class="form-floating mb-3">
                             <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                             <label for="phone">Phone number</label>
                             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
+                        </div> -->
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text"  name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
