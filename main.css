@@ -38,6 +38,10 @@ ul {
     color: black;
     font-size: 100px;
   }
+
+  #subtitle{
+    font-family: 'Libre Baskerville', serif;
+  }
   
   #teacher1{
     display: none;
@@ -55,6 +59,7 @@ ul {
     background-size: cover;
     color: black; 
     font-weight: bolder;
+    /* background-color: rgb(178, 164, 255, 0.6) !important; */
   }
 
   #services{
