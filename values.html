@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />    
+    <link rel="preload" href="main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
-</body>
+  <!--Navbar-->
+  <header style="background-color: #B2A4FF; color: #FDF7C3;">
+    <nav class="navbar" >
+        <div class="container-fluid">
+          <!-- switch to data lazy once I get lazy loading -->
+          <img src="img/logo.svg" alt="Hentai Cooperative">
+          <h1>Hentai Cooperative</h1>
+          <!-- Former color -->
+          <!-- style="color: #3777e9 ; -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
+            data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    <div class="collapse" id="navbarToggleExternalContent"> 
+        <div class="shadow-3 p-4">
+          <button class="btn btn-link btn-block m-0"><a href="index.html">Home</a></button>
+
+          <!-- <button class="btn btn-link btn-block m-0"><a href="goals.html">About Us</a></button>
+          <button class="btn btn-link btn-block m-0"><a href="people.html">Our People</a></button>
+          <button class="btn btn-link btn-block m-0"> <a href="values.html">Our Values</a></button> -->
+
+        </div>
+        </div>
+    </header>
+  <!--/.Navbar-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+
+        <!--Header-->
+        <h3 class="h1-responsive font-weight-bold text-center my-5">Our Values</h3>
+        <!--Header-->
+        <div class="container">
+            <img src="img/teacher2.jpg" alt="Second teacher" width="425px" height="850px">            
+        </div>
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+            <!-- Card -->
+            <div class="card">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title">Innovation</h4>
+                <!-- Text -->
+                <p class="card-text">Our team of experienced professionals are always exploring new ideas and approaches to game development, and we are constantly seeking out ways to push the boundaries of what is possible in the industry. Whether we are exploring new technologies, experimenting with innovative gameplay mechanics, or trying out new storytelling techniques, we are always looking for ways to innovate and evolve.</p>
+              </div>
+              <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+            <!-- Card -->
+            <div class="card">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title">Customer Satisfaction</h4>
+                <!-- Text -->
+                <p class="card-text">We are committed to working closely with our clients to ensure that we deliver products that meet their unique needs and exceed their expectations. We believe that by putting our customers first, we can establish long-term partnerships that are built on trust, respect, and mutual success.</p>
+
+              </div>
+              <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col-md-4 mb-4">
+
+            <!-- Card -->
+            <div class="card">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title">Transparency</h4>
+                <!-- Text -->
+                <p class="card-text">We are committed to being open and honest about our development processes, project timelines, and any challenges we encounter along the way. We believe that by being transparent, we can establish long-term partnerships with our clients that are built on trust and mutual respect.</p>
+
+              </div>
+              <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col-md-4 mb-4">
+
+            <!-- Card -->
+            <div class="card">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title">Passion</h4>
+                <!-- Text -->
+                <p class="card-text">Our team members are deeply passionate about game development, and we believe that this passion is essential to creating games that truly resonate with players. We take pride in our work, and we are committed to creating games that are not only fun and engaging, but also meaningful and impactful.</p>
+
+              </div>
+              <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-md-4 mb-4">
+
+            <!-- Card -->
+            <div class="card">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title">Fun</h4>
+                <!-- Text -->
+                <p class="card-text"> We believe that games are all about entertainment and enjoyment, and we strive to create games that are immersive, engaging, and, above all, fun. Whether we are developing action-packed shooters, thrilling RPGs, or heartwarming visual novels, we always keep fun and enjoyment at the forefront of our minds.</p>
+
+              </div>
+              <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col-md-4 mb-4">
+
+            <!-- Card -->
+            <div class="card">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title">Accountability</h4>
+                <!-- Text -->
+                <p class="card-text">We believe that it is essential to take responsibility for our actions and decisions, and we are committed to making things right when we make mistakes. We believe that by being accountable, we can build strong relationships with our clients and stakeholders, and establish ourselves as a reliable and trustworthy partner.</p>
+
+              </div>
+              <!-- Card content -->
+
+            </div>
+            </div>
+        </div>
+        </section>
+    </main>
+          <footer>
+            <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <br>
+                <p>2023 Hentai Cooperative LLC</p>
+            </div>
+            </footer>
 </html>

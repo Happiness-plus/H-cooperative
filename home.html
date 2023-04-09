@@ -74,13 +74,13 @@
                     <br>
                     <i class="fas fa-users" aria-hidden="true"></i>
                     <h3>Talent Placement</h3>
-                    <p>We recruit top tier talent for your business. All applicants have eroge industry experience.</p>
+                    <p>Our service provides clients with an extensive network of skilled and experienced game developers, writers, artists, and professionals to ensure they find the best industry talent, offering assurance in hiring the best people for the job.</p>
                 </div>
                 <div data-aos="fade-right"class="col" id="consulting">
                     <br>
                     <i class="fas fa-user-tie" aria-hidden="true"></i>
-                    <h3>Consulting</h3>
-                    <p>We offer managment Consulting to various eroge firms.</p>
+                    <h3>Project Management</h3>
+                    <p>Our project management service assists clients in staying on track and on budget by developing project plans, managing timelines and resources, leveraging the extensive experience of our team to help them achieve their goals.</p>
                 </div>
             </div>
             <div class="row">
@@ -88,13 +88,13 @@
                     <br>
                     <i class="fa fa-gamepad" aria-hidden="true"></i>                   
                     <h3>Game and/or Visual Novel Development</h3>
-                    <p>We have a community of coders, artists, translaters, musicians, and writers that can create your next profitable product/service</p>
+                    <p>Our talented team of writers, artists, and developers are experts in creating immersive visual novels that captivate audiences, ensuring that clients receive the highest quality work from a passionate team.</p>
                 </div>
                 <div data-aos="fade-down-right" class="col" id="webdev">
                     <br>
                     <i class="fa fa-code" aria-hidden="true"></i>                    
-                    <h3>Web Development and/or maintenance</h3>
-                    <p>We can create websites from scratch or maintain your existing ones</p>
+                    <h3>Web Development and/or Maintenance</h3>
+                    <p>Our team of skilled developers can design and build custom websites tailored to clients' specific needs, with ongoing maintenance and support to ensure the sites are always up-to-date and functioning smoothly.</p>
                 </div>
             </div>
         </div>
@@ -112,37 +112,29 @@
                 <div class="col-lg-6">
                     
                     <form id="contactForm"  
-                    action="https://formspree.io/f/"
+                    action="https://formspree.io/f/mayzlqyl"
                     method="POST">
                         <!-- Name input-->
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-3" data-aos="flip-left">
                             <!-- Add an input mask -->
                             <input class="form-control" id="name" type="text" name="fullname" placeholder="Enter your name..." data-sb-validations="required" />
                             <label for="name">Discord name</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A Discord name is required.</div>
                         </div>
                         <!-- Email address input-->
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-3" data-aos="flip-right">
                             <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
                             <label for="email">Email address</label>
                             <!-- Add an input mask -->
                             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
-                        <!-- Phone number input-->
-                        <!-- <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div> -->
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-3" div data-aos="flip-up">
                             <textarea class="form-control" id="message" type="text"  name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
-                       
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <div class="d-none" id="submitErrorMessage" data-aos="flip-down"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                         <!-- Submit Button-->
                         <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                     </form>
@@ -167,6 +159,6 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
 
 </html>
