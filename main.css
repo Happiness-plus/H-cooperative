@@ -182,5 +182,13 @@ ul {
     
   }
 
+  @media only screen and (min-height:667), (max-height: 823) {
+    #teacher1{
+      height: 390px !important;
+      width: 290px !important; 
+    }
+    
+  }
+
   
 
