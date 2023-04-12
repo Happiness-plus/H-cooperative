@@ -186,6 +186,10 @@ ul {
     #contact{
       margin-top: 70%;
     }
+    #teacher1{
+      height: 390px;
+      width: 290px; 
+    }
   }
 
   @media screen and (min-width:359px), (max-width: 411px){
