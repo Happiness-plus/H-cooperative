@@ -184,13 +184,13 @@ ul {
 
   @media screen and (min-width:300px), (max-width: 488px){
     #contact{
-      margin-top: 62%;
+      margin-top: 70%;
     }
   }
 
-  @media screen and (min-width:361px), (max-width: 412px){
+  @media screen and (min-width:359px), (max-width: 411px){
     #contact{
-      margin-top: 36%;
+      margin-top: 46%;
     }
   
   }
@@ -198,19 +198,19 @@ ul {
 
   @media screen and (min-width:383px), (max-width: 488px){
     #contact{
-      margin-top: 58%;
+      margin-top: 68%;
     }
   
   }
 
   @media screen and (min-width:394px), (max-width: 488px){
     #contact{
-      margin-top: 50%;
+      margin-top: 75%;
     }
   
   }
 
-  @media screen and (min-width:488px) {
+  @media screen and (min-width:412px) {
     #contact{
       margin: 0;
     }
