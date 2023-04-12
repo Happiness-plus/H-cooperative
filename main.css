@@ -154,6 +154,16 @@ ul {
   footer i {
     font-size: 20px;
   }
+
+  #values_body{
+    background-image: url("img/bedroom.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #111
+  }
   
 
   /* Media query time */
