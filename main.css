@@ -56,7 +56,8 @@ li a:hover:not(.active) {
   color: black;
 }
 #hero{
-  background-image: url("img/school-outside.jpg");
+  background-image: linear-gradient(rgba(178, 164, 255, 0.6), rgba(178, 164, 255, 0.6)), url("img/school-outside.jpg");
+  /* background-image: url("img/school-outside.jpg"); */
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -66,6 +67,16 @@ li a:hover:not(.active) {
   font-weight: bolder;
   /* background-color: rgb(178, 164, 255, 0.6) !important; */
 }
+
+/* #hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(178, 164, 255, 0.6);
+} */
 
 #services{
   width: 100%;
