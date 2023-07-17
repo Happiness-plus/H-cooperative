@@ -1,252 +1,263 @@
 /* Nav bar stuff, might change to blue */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-  
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  .navbar img{
-    max-width: 3%;
-    max-height: 3%;
-  }
-  .active {
-    background-color: #04AA6D;
-  }
+li {
+  float: left;
+}
 
-    /* .glass{
-      background: rgba(11,199,255,0.5) !important;
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.25);
-    } */
-  #title{
-    font-family: 'Petit Formal Script', cursive;
-    color: black;
-    font-size: 100px;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  #subtitle{
-    font-family: 'Libre Baskerville', serif;
-  }
-  
-  #teacher1{
+
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.navbar img{
+  max-width: 3%;
+  max-height: 3%;
+}
+.active {
+  background-color: #04AA6D;
+}
+
+  /* .glass{
+    background: rgba(11,199,255,0.5) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+  } */
+#title{
+  font-family: 'Petit Formal Script', cursive;
+  color: black;
+  font-size: 100px;
+}
+
+#subtitle{
+  font-family: 'Libre Baskerville', serif;
+}
+
+#teacher1{
+  display: none;
+}
+#navbarToggleExternalContent a{
+  font-weight: bolder;
+  color: black;
+}
+#hero{
+  background-image: url("img/school-outside.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black; 
+  font-weight: bolder;
+  /* background-color: rgb(178, 164, 255, 0.6) !important; */
+}
+
+#services{
+  width: 100%;
+  height: 100vh;
+  color: #111;
+  background-color: #111;
+  /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fdf7c3' fill-opacity='0.82'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+}
+
+#LearnMore{
+  color: #111;
+  background-color: #FFB4B4; 
+  font-weight: bolder;
+}
+
+#services h2{
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 50px;
+  color: white;
+  background-color: #111;
+
+}
+
+#talent{
+  background-color: #FFDEB4;
+}
+#consulting{
+  background-color: #FFB4B4;
+
+}
+#gamedev{
+  background-color: #FDF7C3;
+
+}
+
+#webdev{
+  background-color: #b2a4ff;
+
+}
+
+#services i{
+  font-size: 35px;
+
+}
+
+h2{
+  font-weight: bolder !important;
+
+}
+
+
+
+#contact{
+  color: #111;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffdeb4 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffb4b4' fill-opacity='0.98'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#contact h2{
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 50px;
+
+}
+
+#contact i{
+  font-size: 50px;
+}
+
+#submitButton{
+  background-color: #FFB4B4;
+  color: black;
+  font-weight: bolder;
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+footer{
+  background-color: #111;
+  color: white;
+  width: 100%;
+  height: 20vh;
+}
+
+footer i {
+  font-size: 20px;
+}
+
+#values_body{
+  background-image: url("img/bedroom.png");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #111
+}
+
+
+/* Media query time */
+
+@media only screen and (max-width: 992px) {
+  #teacher{
     display: none;
   }
-  #navbarToggleExternalContent a{
-    font-weight: bolder;
-    color: black;
+
+  #title{
+    font-size: 50px;
   }
+
+  #teacher1{
+    display: inherit;
+  }
+
+  .navbar img{
+    max-width: 5%;
+    max-height: 5%;
+  }
+
   #hero{
-    background-image: url("img/school-outside.jpg");
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black; 
-    font-weight: bolder;
-    /* background-color: rgb(178, 164, 255, 0.6) !important; */
+    background: rgb(178, 164, 255);
   }
+  
+}
 
-  #services{
-    width: 100%;
-    height: 100vh;
-    color: #111;
-    background-color: #111;
-    /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fdf7c3' fill-opacity='0.82'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-  }
-
-  #LearnMore{
-    color: #111;
-    background-color: #FFB4B4; 
-    font-weight: bolder;
-  }
-
-  #services h2{
-    font-family: 'Petit Formal Script', cursive;
-    font-size: 50px;
-    color: white;
-    background-color: #111;
-
-  }
-
-  #talent{
-    background-color: #FFDEB4;
-  }
-  #consulting{
-    background-color: #FFB4B4;
-
-  }
-  #gamedev{
-    background-color: #FDF7C3;
-
-  }
-
-  #webdev{
-    background-color: #b2a4ff;
-
-  }
-
-  #services i{
-    font-size: 35px;
-
-  }
-
-  h2{
-    font-weight: bolder !important;
-
-  }
-
- 
-
+@media screen and (min-width:300px), (max-width: 345px){
   #contact{
-    color: #111;
-    width: 100%;
-    height: 100vh;
-    background-color: #ffdeb4 !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffb4b4' fill-opacity='0.98'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
+    margin-top: 70%;
+  }
+  #teacher1{
+    height: 390px;
+    width: 290px; 
+  }
+}
+
+@media screen and (min-width:300px), (max-width: 488px){
+  #contact{
+    margin-top: 70%;
+  }
+  #teacher1{
+    height: 390px;
+    width: 290px; 
+  }
+}
+
+
+@media screen and (min-width:359px), (max-width: 411px){
+  #contact{
+    margin-top: 46%;
   }
 
-  #contact h2{
-    font-family: 'Petit Formal Script', cursive;
-    font-size: 50px;
+}
 
+
+@media screen and (min-width:383px), (max-width: 488px){
+  #contact{
+    margin-top: 68%;
   }
 
-  #contact i{
-    font-size: 50px;
+}
+
+@media screen and (min-width:394px), (max-width: 488px){
+  #contact{
+    margin-top: 75%;
   }
 
-  #submitButton{
-    background-color: #FFB4B4;
-    color: black;
-    font-weight: bolder;
-    font-size: 19px;
-    text-transform: capitalize;
-  }
+}
 
-  footer{
-    background-color: #111;
-    color: white;
-    width: 100%;
-    height: 20vh;
-  }
-
-  footer i {
-    font-size: 20px;
-  }
-
-  #values_body{
-    background-image: url("img/bedroom.png");
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #111
+@media screen and (min-width:410px) {
+  #contact{
+    margin: 0;
   }
   
+}
 
-  /* Media query time */
 
-  @media only screen and (max-width: 992px) {
-    #teacher{
-      display: none;
-    }
-
-    #title{
-      font-size: 50px;
-    }
-
-    #teacher1{
-      display: inherit;
-    }
-
-    .navbar img{
-      max-width: 5%;
-      max-height: 5%;
-    }
-
-    #hero{
-      background: rgb(178, 164, 255);
-    }
-    
+/* @media only screen and (min-height:667), (max-height: 823) {
+  #teacher1{
+    height: 390px !important;
+    width: 290px !important; 
   }
-
-  @media screen and (min-width:300px), (max-width: 488px){
-    #contact{
-      margin-top: 70%;
-    }
-    #teacher1{
-      height: 390px;
-      width: 290px; 
-    }
-  }
-
-  @media screen and (min-width:359px), (max-width: 411px){
-    #contact{
-      margin-top: 46%;
-    }
   
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 1440px) and (min-resolution: 300dpi) and (max-resolution: 600dpi) {
+  #contact{
+    margin-top: 25%;
   }
+} */
 
 
-  @media screen and (min-width:383px), (max-width: 488px){
-    #contact{
-      margin-top: 68%;
-    }
-  
-  }
-
-  @media screen and (min-width:394px), (max-width: 488px){
-    #contact{
-      margin-top: 75%;
-    }
-  
-  }
-
-  @media screen and (min-width:410px) {
-    #contact{
-      margin: 0;
-    }
-    
-  }
 
 
-  /* @media only screen and (min-height:667), (max-height: 823) {
-    #teacher1{
-      height: 390px !important;
-      width: 290px !important; 
-    }
-    
-  }
-
-  @media only screen and (min-device-width: 360px) and (max-device-width: 1440px) and (min-resolution: 300dpi) and (max-resolution: 600dpi) {
-    #contact{
-      margin-top: 25%;
-    }
-  } */
-  
-
-
-  
 
