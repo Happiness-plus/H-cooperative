@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="preload" href="main.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" as="style" onload="this.rel='stylesheet'">
@@ -9,9 +12,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+<header style="background-color: #B2A4FF; color: #FDF7C3;">
+    <nav class="navbar" >
+        <div class="container-fluid">
+          <!-- switch to data lazy once I get lazy loading -->
+          <img src="img/logo.svg" alt="Hentai Cooperative">
+          <h1>Hentai Cooperative</h1>
+          <!-- Former color -->
+          <!-- style="color: #3777e9 ; -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
+            data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    <div class="collapse" id="navbarToggleExternalContent"> 
+        <div class="shadow-3 p-4">
+          <button class="btn btn-link btn-block m-0"><a href="index.html">Home</a></button>
 
+          <!-- <button class="btn btn-link btn-block m-0"><a href="goals.html">About Us</a></button>
+          <button class="btn btn-link btn-block m-0"><a href="people.html">Our People</a></button>
+          <button class="btn btn-link btn-block m-0"> <a href="values.html">Our Values</a></button> -->
 
+        </div>
+        </div>
+    </header>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#b2a4ff" fill-opacity="1" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,122.7C840,128,960,160,1080,181.3C1200,203,1320,213,1380,218.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+  </svg>
+  <style>
+    body{
+        background-color: #FFB4B4;
+    }
+  </style>
 <div class="container my-5">
+    <h1 id="vntitle" class="container">Our Visual Novel Development Services</h1>
+    <hr>
     <div class="row">
       <!-- Basic Plan -->
       <div class="col-md-4">
@@ -19,8 +56,8 @@
           <div class="card-header">Kawaii Kohai</div>
           <div class="card-body">
             <h5 class="card-title">$3,000</h5>
-            <p class="card-text">Our Kawaii Kohai tier is a perfect starting point for those embarking on their first visual novel journey. This package focuses on the key aspects needed to create an engaging and appealing visual novel. Studio Danza's team will take on the creative load and bring your initial vision to life, starting with captivating character designs that resonate with your desired audience. We'll also develop a compelling, yet simple storyline that will serve as the heart of your visual novel. To accompany this, our team of artists, programmers, and sound designers will create a cohesive and immersive experience through carefully curated art, soundscapes, and user-friendly programming. And to keep everything on track, a dedicated producer will oversee the project, ensuring that both soft and hard deadlines are met without compromising on quality. With the Kawaii Kohai tier, your basic idea transforms into a tangible, enjoyable visual novel that promises a delightful experience to its players.</p>
-            <a href="#" class="btn btn-primary">Select Plan</a>
+            <p class="card-text">Studio Danza's Kawaii Kohai tier, an ideal starting point for first-time visual novel creators, guarantees a cohesive, immersive, and delightful player experience by transforming your basic idea into a fully realized novel through our creative services, including captivating character designs, compelling storylines, carefully curated art and soundscapes, user-friendly programming, all managed by a dedicated producer to ensure quality and timeliness.</p>
+            <a href="https://h-cooperative.myhelcim.com/hosted/?token=ffd941d29a66d393479b77" class="btn btn-primary">Select Plan</a>
           </div>
         </div>
       </div>
@@ -30,35 +67,32 @@
           <div class="card-header">Hokage Honcho</div>
           <div class="card-body">
             <h5 class="card-title">$7,500</h5>
-            <p class="card-text">Our Hokage Honcho tier is a comprehensive, all-encompassing service designed for clients seeking to create fully-realized visual novels. Studio Danza will handle every aspect of your project, starting with the visual elements. Our talented team of artists will create a richly detailed world with high-quality CGs, expressive character sprites, and immersive backgrounds that perfectly suit your narrative. On the writing front, we bring your story to life with deep lore, engaging character development, and a captivating plot, skilfully crafted by our experienced writers. Sound is an integral part of the experience, and our audio team excels in sound design and music composition to create an auditory landscape that complements your visual novel's aesthetics and narrative. Lastly, our skilled programmers ensure a seamless user experience, offering professional scripting and intuitive UX/UI design. With the Hokage Honcho tier, you're not just getting a product; you're getting a captivating, immersive story experience made real through art, sound, and interactivity. </p>
-            <ol>
-                <li>
-                    
-                </li>
-            </ol>
+            <p class="card-text">Experience Studio Danza's Hokage Honcho tier, your one-stop solution for crafting immersive visual novels, where our world-class artists, writers, sound designers, and programmers collaboratively transform your narrative into a captivating story experience, enriched by vivid visuals, compelling writing, atmospheric soundscapes, and intuitive UX/UI design.</p>
             <a href="#" class="btn btn-primary">Select Plan</a>
           </div>
         </div>
       </div>
+      <br>
+      <br>
+      <br>
       <!-- Premium Plan -->
       <div class="col-md-4">
         <div class="card">
           <div class="card-header"> Kamige King </div>
           <div class="card-body">
             <h5 class="card-title">Contact Us</h5>
-            <p class="card-text">The Kamige King tier is Studio Danza's premier offering, designed specifically for corporate clients seeking a high-end, custom, immersive visual novel experience. This tier goes beyond the basics by incorporating sophisticated elements such as fluid animation and professional voice acting, providing a truly dynamic and engaging user experience. Our multidisciplinary team of experts collaborate to develop a product that is tailored exactly to your unique requirements and aspirations, ensuring each visual novel is a masterpiece in its own right. With the Kamige King tier, we promise not just a product, but a fully animated, voiced, and customized experience that leaves a lasting impression. Elevate your brand storytelling to unprecedented levels, redefine audience engagement, and harness the power of narratives with Studio Danza's Kamige King tier. Please contact us on Discord to discuss the specifics and pricing of your project.</p>
-            <a href="home.html#contact" class="btn btn-primary">Contact on Discord</a>
+            <p class="card-text">Studio Danza's Kamige King tier offers you a custom, high-end visual novel experience with fluid animation and professional voice acting, developed by a multidisciplinary team tailoring the product to your unique specifications, promising not just a product but a fully animated, voiced, and personalized engagement that enhances brand storytelling and redefines audience engagement; for project specifics and pricing, please contact us.</p>
+            <a href="home.html#contact" class="btn btn-primary">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="container">
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Services</th>
+          <th scope="col">Visual Novel Development Services</th>
           <th scope="col">Kawaii Kohai (Basic)</th>
           <th scope="col">Hokage Honcho (Medium)</th>
           <th scope="col">Kamige King (Premium)</th>
@@ -141,11 +175,6 @@
     </table>
   </div>
   
-  
-
-<form name="HcmPayPage" method="POST" action="https://h-cooperative.myhelcim.com/hosted/?token=ffd941d29a66d393479b77" target="HelcimPaymentPage"><input type="hidden" name="productId" value="1268678"><input type="hidden" name="productQuantity" value="1"><input type="hidden" name="amountHash" value="864de97903c1d53a326db80e79330b9456f396b03ff4cc6f583f6cad97d421a5"><input type="submit" name="submit" value="Pay Now">
-</form>
-
 <footer>
     <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
         <i class="fab fa-twitter" aria-hidden="true"></i>

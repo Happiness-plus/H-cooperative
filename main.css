@@ -24,6 +24,12 @@ li a {
 li a:hover:not(.active) {
   background-color: #111;
 }
+
+.card-header{
+  font-family: 'Libre Baskerville', serif;
+  font-size: large;
+}
+
 .navbar img{
   max-width: 3%;
   max-height: 3%;
@@ -32,21 +38,22 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
-  /* .glass{
-    background: rgba(11,199,255,0.5) !important;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.25);
-  } */
 #title{
   font-family: 'Petit Formal Script', cursive;
   color: black;
   font-size: 100px;
 }
 
+#vntitle{
+  font-family: 'Petit Formal Script', cursive;
+  color: black;
+}
+
 #subtitle{
   font-family: 'Libre Baskerville', serif;
 }
+
+
 
 #teacher1{
   display: none;
@@ -68,15 +75,7 @@ li a:hover:not(.active) {
   /* background-color: rgb(178, 164, 255, 0.6) !important; */
 }
 
-/* #hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(178, 164, 255, 0.6);
-} */
+
 
 #services{
   width: 100%;
