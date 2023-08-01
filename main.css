@@ -63,7 +63,7 @@ li a:hover:not(.active) {
   color: black;
 }
 #hero{
-  background-image: linear-gradient(rgba(178, 164, 255, 0.6), rgba(178, 164, 255, 0.6)), url("img/school-outside.jpg");
+  background-image: linear-gradient(rgba(178, 164, 255, 0.6), rgba(178, 164, 255, 0.6)), url("img/school-outside.webp");
   /* background-image: url("img/school-outside.jpg"); */
   height: 100vh;
   background-attachment: fixed;
