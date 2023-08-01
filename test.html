@@ -1,53 +1,139 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Product Page</title>
-
-    <!-- MDBootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: #FDF7C3;
-        }
-        
-        .card {
-            background-color: #FFDEB4;
-            border-radius: 15px;
-            box-shadow: 5px 5px 15px #b2a4ff;
-        }
-
-        .card .card-body h5.card-title,
-        .card .card-body p.card-text {
-            color: #FFB4B4;
-        }
-
-        .btn {
-            background-color: #b2a4ff;
-            color: #FFFFFF;
-            box-shadow: 2px 2px 5px #FFB4B4;
-        }
-    </style>
-</head>
-<body>
-    <div class="container my-5">
-        <div class="card" style="width: 18rem;">
-            <img src="your-image-url.jpg" class="card-img-top" alt="product-image">
-            <div class="card-body">
-                <h5 class="card-title">Product Name</h5>
-                <p class="card-text">Some quick example text to build on the product title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn">Go somewhere</a>
-            </div>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="main.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+<header style="background-color: #B2A4FF; color: #FDF7C3;">
+    <nav class="navbar" >
+        <div class="container-fluid">
+          <!-- switch to data lazy once I get lazy loading -->
+          <img src="img/logo.svg" alt="Hentai Cooperative">
+          <h1>Hentai Cooperative</h1>
+          <!-- Former color -->
+          <!-- style="color: #3777e9 ; -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
+            data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </div>
+      </nav>
+    <div class="collapse" id="navbarToggleExternalContent"> 
+        <div class="shadow-3 p-4">
+          <button class="btn btn-link btn-block m-0"><a href="home.html">Home</a></button>
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-</body>
-</html>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <div
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Visual Novel Development Services</th>
+              <th scope="col">Kawaii Kohai (Basic)</th>
+              <th scope="col">Hokage Honcho (Medium)</th>
+              <th scope="col">King of Kamige (Premium)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Art</th>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Programming (Ren'py programming only)</th>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Writing (Concepting and word limit at 10k)</th>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Audio</th>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Producer Oversight</th>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Advanced Art (CGs, Backgrounds, Sprites)</th>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Detailed Writing (Lore, Characters, higher word limit)</th>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Advanced Audio (Sound Design, Music, higher production quality)</th>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Advanced Programming (Ren'py advanced scripting, Better UX/UI, and Unity Programming)</th>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Animation</th>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Voice Acting</th>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <th scope="row">Fully Customized</th>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+          </tbody>
+        </table>
+        /
+      </div>    
+  <footer>
+    <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        <br>
+        <p>2023 Hentai Cooperative LLC</p>
+    </div>
+    </footer>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
