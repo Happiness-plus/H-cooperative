@@ -33,22 +33,49 @@
   gtag('js', new Date());
   gtag('config', 'G-1FPX109MXZ');
 </script>
-<body>
-    <section class="intro">
-        <p class="container"></p>
-    </section>
+<body style="background-color: #FDF7C3;">
+    <header style="background-color: #B2A4FF; color: #FDF7C3;">
+        <nav class="navbar" >
+            <div class="container-fluid">
+              <!-- switch to data lazy once I get lazy loading -->
+              <img src="img/logo.svg" alt="Hentai Cooperative">
+              <h1>Hentai Cooperative</h1>
+              <!-- Former color -->
+              <!-- style="color: #3777e9 ; -->
+              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
+                data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        <div class="collapse" id="navbarToggleExternalContent"> 
+            <div class="shadow-3 p-4">
+              <button class="btn btn-link btn-block m-0"><a href="index.html">Home</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="VNdev.html">Visual Novel Creation</a></button>
 
+              <!-- <button class="btn btn-link btn-block m-0"><a href="goals.html">About Us</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="people.html">Our People</a></button>
+              <button class="btn btn-link btn-block m-0"> <a href="values.html">Our Values</a></button> -->
+
+            </div>
+            </div>
+        </header>
+    <section class="intro">
+        <h1 id="vntitle" class="container" style="margin-top: 4%;">Our Translation Services</h1>
+        <p class="container">We offer top-notch translation services for all your personal and business needs. We offer translations for games, novels, and any entertainment product.  Get started with us today!</p>
+    </section>
     <main>
-        <div class="container">
+        <div class="container" style="margin-top: 5%;">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <img src="img/teacher5.png" alt="sexy teacher"  class="img-fluid">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h1 class="container">Choose Your Subscription Plan</h1>
+                    <h1 class="container">Choose Your Translation Plan</h1>
                     <hr>
                 <div class="tiers">
-                    <button class="btn" style="background-color: #FDF7C3;" onclick="showPlans(0, '#FDF7C3')">Basic</button>
+                    <button class="btn" style="background-color: white;" onclick="showPlans(0, 'white')">Basic</button>
                     <button class="btn" style="background-color: #B2A4FF;" onclick="showPlans(1, '#B2A4FF')">Silver</button>
                     <button class="btn" style="background-color: #FFB4B4;" onclick="showPlans(2, '#FFB4B4')">Gold</button>
                     <button class="btn" style="background-color: #FFDEB4;" onclick="showPlans(3, '#FFDEB4')">Platinum</button>
@@ -56,14 +83,31 @@
                 <div class="plans" id="plans"></div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="img/teacher3.png" alt="sexy teacher" class="img-fluid">
+                    <ul style="color: #332d2d; background-color: inherit;">
+                        <h3>Languages Covered</h3>
+                        <hr>
+                        <li>🇵🇹 Portugal</li>
+                        <br>
+                        <li>🇪🇸 Spain</li>
+                        <br>
+                        <li>🇲🇽 Mexico</li>
+                        <br>
+                        <li>🇧🇷 Brazil</li>
+                        <br>
+                        <li>🇯🇵 Japan</li>
+                        <br>
+                        <li>🇰🇷 Korea</li>
+                        <br>
+                        <li>🇩🇪 Germany</li>
+                        <br>
+                        <li>🇺🇸 United States</li>
+                        <br>
+                        <li>🇸🇪 Sweden</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
-    
-
-
 
     
 </body>
@@ -88,11 +132,12 @@
 }
 
 .plan {
-    border: 1px solid #CCC;
+    /* border: 1px solid #CCC; */
     padding: 15px;
     width: 200px;
     margin: 10px;
     background-color: #FFDEB4; /* Customize the plan background color here */
+    border-radius: 0.25rem;
 }
 
 h2 {

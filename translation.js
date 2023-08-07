@@ -22,4 +22,4 @@ function showPlans(tier, color) {
 }
 
 // Default load for Tier 1
-showPlans(0, '#FDF7C3');
+showPlans(0, 'white');
