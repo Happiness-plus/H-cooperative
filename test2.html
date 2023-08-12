@@ -1,68 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #FDF7C3;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-
-    .color-block {
-        width: 100%;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .b2a4ff {
-        background-color: #B2A4FF;
-    }
-
-    .ffb4b4 {
-        background-color: #FFB4B4;
-    }
-
-    .ffdeb4 {
-        background-color: #FFDEB4;
-    }
-
-    .svg-logo {
-        width: 100px;
-        height: 100px;
-    }
-
-    h1 {
-        color: #FDF7C3;
-        text-align: center;
-        padding: 20px;
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SVG Drawing Animation</title>
 </head>
 <body>
-    <div class="container">
-        <div class="color-block b2a4ff">
-            <h1>Welcome to our site!</h1>
-        </div>
-        <div class="color-block ffdeb4">
-            <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                <circle cx="25" cy="25" r="20" fill="#FDF7C3" />
-            </svg>
-        </div>
-        <div class="color-block ffb4b4">
-            <h1>Stay tuned for more!</h1>
-        </div>
-    </div>
+    <svg class="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill" fill="#B2A4FF" fill-opacity="1"></path>
+    </svg>
 </body>
+</html>
+
+<style>
+   .shape-fill {
+    stroke: #B2A4FF;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: draw 5s forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Optional: Add a delay to start the animation when the user sees it */
+.wave {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    animation: fadeIn 1s forwards 1s; /* 1s delay */
+}
+
+@keyframes fadeIn {
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+</style>
 </html>
