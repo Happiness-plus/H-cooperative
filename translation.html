@@ -80,9 +80,9 @@
                         <div class="col-md-4 mb-3">
                           <button class="btn btn-primary w-100" id="showDivButton">I need a localizer</button>
                         </div>
-                        <div class="col-md-4 mb-3">
+                        <!-- <div class="col-md-4 mb-3">
                           <button class="btn btn-primary w-100" id="showDivButton2">I need a localization team</button>
-                        </div>
+                        </div> -->
                         <div class="col-md-4 mb-3">
                           <button class="btn btn-primary w-100" id="quotebutton">I need a custom quote</button>
                         </div>
@@ -178,6 +178,39 @@
                                 <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialRussian" value="Russian">
                                 <label class="form-check-label" for="initialRussian">Russian</label>
                               </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialKorean" value="Korean">
+                                <label class="form-check-label" for="initialKorean">Korean</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="targeGerman" value="German">
+                                <label class="form-check-label" for="initialGerman">German</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialPortuguese" value="Portuguese">
+                                <label class="form-check-label" for="initialPortuguese">Portuguese</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialChinese" value="Chinese">
+                                <label class="form-check-label" for="initialChinese">Chinese</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialJapanese" value="Japanese">
+                                <label class="form-check-label" for="initialJapanese">Japanese</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialSpanish" value="Spanish">
+                                <label class="form-check-label" for="initialSpanish">Spanish</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialRussian" value="Russian">
+                                <label class="form-check-label" for="initialRussian">French</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialRussian" value="Russian">
+                                <label class="form-check-label" for="initialRussian">English</label>
+                              </div>
+                              
                               <!-- Repeat for other languages -->
                             </div>
                       
@@ -222,8 +255,10 @@
                               </div>
                               <!-- Repeat for other languages -->
                             </div>
-                            <textarea name="message"></textarea>
-                            
+                            <div class="mb-3">
+                              <label for="message" class="form-label">Comments</label>
+                              <textarea name="message" id="message" class="form-control"></textarea>
+                            </div>
                       
                             <!-- Submit Button -->
                             <button type="submit" class="btn btn-primary">Submit</button>
