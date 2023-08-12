@@ -61,10 +61,10 @@
             </div>
             </div>
         </header>
-         <img src="img/book.svg">
+         <img src="img/book.svg" width="100%">
     <section class="intro">
-        <h1 id="vntitle" class="container" style="margin-top: 4%;">Our Translation Services</h1>
-        <p class="container">We offer top-notch translation services for all your personal and business needs. We offer translations for games, novels, and any entertainment product.  Get started with us today!</p>
+        <h1 id="vntitle" class="container" style="margin-top: 4%;">Our Localization Services</h1>
+        <p class="container">We offer top-notch localization services for all your personal and business needs. We offer translations for games, novels, and any entertainment product.  Get started with us today!</p>
     </section>
     <main>
         <div class="container" style="margin-top: 5%;">
@@ -73,23 +73,174 @@
                     <img src="img/teacher5.png" alt="sexy teacher"  class="img-fluid">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h1 class="container">Choose Your Translation Plan</h1>
+                    <h1 class="container">Choose Your Localization Plan</h1>
                     <hr>
-                <div class="tiers">
-                    <button class="btn" style="background-color: white;" onclick="showPlans(0, 'white')">Basic</button>
-                    <button class="btn" style="background-color: #B2A4FF;" onclick="showPlans(1, '#B2A4FF')">Silver</button>
-                    <button class="btn" style="background-color: #FFB4B4;" onclick="showPlans(2, '#FFB4B4')">Gold</button>
-                    <button class="btn" style="background-color: #FFDEB4;" onclick="showPlans(3, '#FFDEB4')">Platinum</button>
-                </div>
-                <div class="plans" id="plans"></div>
+                    <div class="container choices">
+                      <div class="row">
+                        <div class="col-md-4 mb-3">
+                          <button class="btn btn-primary w-100" id="showDivButton">I need a localizer</button>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <button class="btn btn-primary w-100" id="showDivButton2">I need a localization team</button>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <button class="btn btn-primary w-100" id="quotebutton">I need a custom quote</button>
+                        </div>
+                      </div>
+                    </div>                    
+                    <div id="subscription">
+                      <div class="tiers">
+                        <button class="btn" style="background-color: white;" onclick="showPlans(0, 'white')">Basic</button>
+                        <button class="btn" style="background-color: #B2A4FF;" onclick="showPlans(1, '#B2A4FF')">Silver</button>
+                        <button class="btn" style="background-color: #FFB4B4;" onclick="showPlans(2, '#FFB4B4')">Gold</button>
+                        <button class="btn" style="background-color: #FFDEB4;" onclick="showPlans(3, '#FFDEB4')">Platinum</button>
+                    </div>
+                    <div class="plans" id="plans"></div>
+                    </div>
+                      <div class="card" id="Lquote">
+                        <div class="card-body">
+                          <form action="https://formspree.io/f/mayzlqyl" method="POST" >
+                            <h4 class="card-title">Get a tailored custom quote</h4>
+                            <hr>
+                            <select name="subject" style="display: none;">
+                              <option value="Localization" selected>Localization</option>
+                            </select>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">0.19$ to 0.21$ per word</h6> -->
+                            <!-- Radio Button: Company or Private -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="type" id="company" value="company">
+                              <label class="form-check-label" for="company">Company</label>
+                            </div>
+                            <div class="form-check mb-3">
+                              <input class="form-check-input" type="radio" name="type" id="private" value="private">
+                              <label class="form-check-label" for="private">Private</label>
+                            </div>
+                      
+                            <!-- Company Name -->
+                            <div class="mb-3">
+                              <label for="companyName" class="form-label">Company Name</label>
+                              <input type="text" class="form-control" id="companyName" name="companyName">
+                            </div>
+                      
+                            <!-- First Name, Last Name, Email, Phone Number -->
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="phone" class="form-label">Phone Number</label>
+                              <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                      
+                            <!-- File Upload -->
+                            <div class="mb-3">
+                              <label for="fileUpload" class="form-label">File Upload</label>
+                              <input type="file" class="form-control" id="fileUpload" name="fileUpload">
+                            </div>
+                            <!-- Radio Button: Visual Novel, Game, Light Novel, Comic -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="projectType" id="visualNovel" value="Visual Novel">
+                              <label class="form-check-label" for="visualNovel">Visual Novel</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="projectType" id="game" value="Game">
+                              <label class="form-check-label" for="game">Game</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="projectType" id="lightNovel" value="Light Novel">
+                              <label class="form-check-label" for="lightNovel">Light Novel</label>
+                            </div>
+                            <div class="form-check mb-3">
+                              <input class="form-check-input" type="radio" name="projectType" id="comic" value="Comic">
+                              <label class="form-check-label" for="comic">Comic</label>
+                            </div>
+                      
+                            <!-- Number: Word Count -->
+                            <div class="mb-3">
+                              <label for="wordCount" class="form-label">Word Count</label>
+                              <input type="number" class="form-control" id="wordCount" name="wordCount">
+                            </div>
+                      
+                            <!-- Initial Language(s) -->
+                            <div class="mb-3">
+                              <label class="form-label">Initial Language(s)</label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="initialLanguages" id="initialRussian" value="Russian">
+                                <label class="form-check-label" for="initialRussian">Russian</label>
+                              </div>
+                              <!-- Repeat for other languages -->
+                            </div>
+                      
+                            <!-- Target Language(s) -->
+                            <div class="mb-3">
+                              <label class="form-label">Target Language(s)</label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetRussian" value="Russian">
+                                <label class="form-check-label" for="targetRussian">Russian</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetKorean" value="Korean">
+                                <label class="form-check-label" for="targetKorean">Korean</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targeGerman" value="German">
+                                <label class="form-check-label" for="targetGerman">German</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetPortuguese" value="Portuguese">
+                                <label class="form-check-label" for="targetPortuguese">Portuguese</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetChinese" value="Chinese">
+                                <label class="form-check-label" for="targetChinese">Chinese</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetJapanese" value="Japanese">
+                                <label class="form-check-label" for="targetJapanese">Japanese</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetSpanish" value="Spanish">
+                                <label class="form-check-label" for="targetSpanish">Spanish</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetRussian" value="Russian">
+                                <label class="form-check-label" for="targetRussian">French</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="targetLanguages" id="targetRussian" value="Russian">
+                                <label class="form-check-label" for="targetRussian">English</label>
+                              </div>
+                              <!-- Repeat for other languages -->
+                            </div>
+                            <textarea name="message"></textarea>
+                            
+                      
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+
+                   
+                  </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <ul style="color: #332d2d; background-color: inherit;">
                         <h3>Languages Available</h3>
                         <hr>
-                        <li>🇵🇹 🇧🇷 Português</li>
+                        <li>🇵🇹 🇧🇷 Portuguese</li>
                         <br>
-                        <li>🇪🇸 🇲🇽 Español</li>
+                        <li>🇪🇸 🇲🇽 Spanish</li>
                         <br>
                         <li>🇯🇵 Japanese</li>
                         <br>
@@ -113,10 +264,17 @@
     
 </body>
 <style>
+  #Lquote{
+    display: none;
+
+  }
+    #subscription{
+      display: none;
+    }
     body {
-    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
+
 
 .tiers .btn {
     padding: 10px 20px;

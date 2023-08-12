@@ -23,3 +23,53 @@ function showPlans(tier, color) {
 
 // Default load for Tier 1
 showPlans(0, 'white');
+
+// script.js
+// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('showDivButton').addEventListener('click', function () {
+      var contentDiv = document.getElementById('subscription');
+      if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
+        fadeIn(contentDiv);
+      } else {
+        fadeOut(contentDiv);
+      }
+    });
+  });
+  
+  function fadeIn(element) {
+    var opacity = 0;
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+      if (opacity >= 1) {
+        clearInterval(timer);
+      }
+      element.style.opacity = opacity;
+      opacity += 0.1;
+    }, 50);
+  }
+  
+  function fadeOut(element) {
+    var opacity = 1;
+    var timer = setInterval(function () {
+      if (opacity <= 0) {
+        clearInterval(timer);
+        element.style.display = 'none';
+      }
+      element.style.opacity = opacity;
+      opacity -= 0.1;
+    }, 50);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('quotebutton').addEventListener('click', function () {
+      toggleDisplay('Lquote');
+    });
+  });
+  
+  function toggleDisplay(elementId) {
+    var element = document.getElementById(elementId);
+    element.style.display = element.style.display === 'none' || element.style.display === '' ? 'block' : 'none';
+  }
+  
+  
