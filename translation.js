@@ -24,6 +24,8 @@ function showPlans(tier, color) {
 // Default load for Tier 1
 // showPlans(0, 'white');
 
+// Fix the flickering, shoudl've used css instead but I thought it was going to be fine. 
+
 // script.js
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('localizer').addEventListener('click', function () {
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       opacity += 0.1;
     }, 50);
   }
-    
+
   function fadeOut(element) {
     var opacity = 1;
     var timer = setInterval(function () {
