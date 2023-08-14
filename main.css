@@ -94,7 +94,7 @@ li a:hover:not(.active) {
 }
 
 #services h2{
-  font-family: 'Petit Formal Script', cursive;
+  font-family: 'petit_formal_scriptregular', cursive;
   font-size: 50px;
   color: white;
   background-color: #111;
@@ -139,7 +139,7 @@ h2{
 }
 
 #contact h2{
-  font-family: 'Petit Formal Script', cursive;
+  font-family: 'petit_formal_scriptregular', cursive;
   font-size: 50px;
 
 }
