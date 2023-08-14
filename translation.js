@@ -72,5 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var element = document.getElementById(elementId);
     element.style.display = element.style.display === 'none' || element.style.display === '' ? 'block' : 'none';
   }
+
+  function toggleOtherField() {
+    var otherField = document.getElementById('otherField');
+    otherField.style.display = otherField.style.display === 'none' ? 'block' : 'none';
+  }
   
   
