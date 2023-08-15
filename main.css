@@ -212,6 +212,10 @@ footer i {
     height: 390px;
     width: 290px; 
   }
+
+  #hero{
+    height: auto;
+  }
 }
 
 @media screen and (min-width:300px), (max-width: 488px){

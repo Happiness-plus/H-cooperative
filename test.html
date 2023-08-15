@@ -1,139 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preload" href="main.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-<header style="background-color: #B2A4FF; color: #FDF7C3;">
-    <nav class="navbar" >
-        <div class="container-fluid">
-          <!-- switch to data lazy once I get lazy loading -->
-          <img src="img/logo.svg" alt="Hentai Cooperative">
-          <h1>Hentai Cooperative</h1>
-          <!-- Former color -->
-          <!-- style="color: #3777e9 ; -->
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
-            data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-    <div class="collapse" id="navbarToggleExternalContent"> 
-        <div class="shadow-3 p-4">
-          <button class="btn btn-link btn-block m-0"><a href="home.html">Home</a></button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Hentai Cooperative</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />    
+  <link rel="icon" href="favicon.ico"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="fonts/fonts.css" as="style" onload="this.rel='stylesheet'">
+    <!-- <link rel="stylesheet" href="fonts/fonts.css"> -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
 
+
+
+<!-- SEO STUFF -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MTY05VZRY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1FPX109MXZ');
+</script>
+
+<meta property="og:title" content="Hentai Cooperative LLC" />
+<!-- <meta property="og:description" content="Hentai Cooperative LLC: Pioneer in the eroge industry. Enjoy higher pay, a democratic culture, and become an leader."> -->
+<meta property="og:description" content="Hentai Cooperative helps you complete your ambitious hentai media projects. Buy the full package service, we make your masterpiece!">
+<meta property="og:image" content="http://hentaicoop.com/img/logo.png" />
+<meta property="og:url" content="http://hentaicoop.com/" />
+<meta property="og:type" content="website" />
+
+</head>
+
+<body>
+    <style>
+  
+        body {
+  overflow-x: hidden !important;
+}   </style>
+    <header style="background-color: #B2A4FF; color: #FDF7C3;">
+        <nav class="navbar" >
+            <div class="container-fluid">
+              <!-- switch to data lazy once I get lazy loading -->
+              <!-- making this into a link is a bigger problem than I thought -->
+              <img src="img/logo.svg" alt="Hentai Cooperative" height="75px" width="75px">
+              <h1>Hentai Cooperative</h1>
+              <!-- Former color -->
+              <!-- style="color: #3777e9 ; -->
+              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
+                data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        <div class="collapse" id="navbarToggleExternalContent"> 
+            <div class="shadow-3 p-4">
+              <button class="btn btn-link btn-block m-0"><a href="home.html">Home</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="VNdev.html">Visual Novel Creation</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="translation.html">Localization</a></button>
+
+
+              <!-- <button class="btn btn-link btn-block m-0"><a href="goals.html">About Us</a></button>
+              <button class="btn btn-link btn-block m-0"><a href="people.html">Our People</a></button>
+              <button class="btn btn-link btn-block m-0"> <a href="values.html">Our Values</a></button> -->
+
+            </div>
+            </div>
+        </header>
+    <!-- Something to grab their attension within the first 15 seconds and hold it -->
+    <section id="hero">
+        <div class="row container">
+            <div class="col">
+                <!-- maybe use srcset -->
+                <img id="teacher" class="animate__animated animate__fadeInRight animate__delay-3s" src="img/teacher1.png" height="739px" width="466px">
+            </div>
+            <div class="col text-center py-4 align-items-center">
+                <h1 class="animate__animated animate__fadeIn" id="title">We make quality hentai</h1>
+                <h2 class="animate__animated animate__fadeInLeft animate__delay-2s" id="subtitle">We're a community of talented, skilled, and diligent creators</h2>
+                <a class="btn btn-lg m-2 hoverable animate__animated animate__zoomIn animate__delay-4s" href="#services" role="button" id="LearnMore">Learn More</a>
+                <img id="teacher1"class="animate__animated animate__fadeInRight animate__delay-3s" src="img/teacher1.webp" height="450px" width="300px">
+            </div>
         </div>
+        
+    </section>
+    <!-- Basically why they should hire us and our track record -->
+    <section id="services">
+        <div class="container text-center py-4 align-items-center">
+            <h2 class="text-center">
+                Our Services
+            </h2>
+            <div class="row">
+                <div data-aos="zoom-in" class="col" id="talent">
+                    <br>
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h3>Talent Placement</h3>
+                    <p>Our service provides clients with an extensive network of skilled and experienced game developers, writers, artists, and professionals to ensure they find the best industry talent, offering assurance in hiring the best people for the job.</p>
+                </div>
+                <div data-aos="fade-right"class="col" id="consulting">
+                    <br>
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h3>Localization</h3>
+                    <p>Looking to expand your reach globally? We offer top-notch localization services in 9 languages, catering to all your personal and business needs, from games and novels to entertainment products.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div data-aos="fade-left" class="col" id="gamedev">
+                    <br>
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>                   
+                    <h3>Visual Novel Development</h3>
+                    <p>Our talented team of writers, artists, and developers are experts in creating immersive visual novels that captivate audiences, ensuring that clients receive the highest quality work from a passionate team.</p>
+                </div>
+                <div data-aos="fade-down-right" class="col" id="webdev">
+                    <br>
+                    <i class="fa fa-code" aria-hidden="true"></i>                    
+                    <h3>Web Development and/or Maintenance</h3>
+                    <p>Our team of skilled developers can design and build custom websites tailored to clients' specific needs, with ongoing maintenance and support to ensure the sites are always up-to-date and functioning smoothly.</p>
+                </div>
+            </div>
         </div>
-    </header>
-    <div class="container">
-        <div
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Visual Novel Development Services</th>
-              <th scope="col">Kawaii Kohai (Basic)</th>
-              <th scope="col">Hokage Honcho (Medium)</th>
-              <th scope="col">King of Kamige (Premium)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Art</th>
-              <td>✔️</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Programming (Ren'py programming only)</th>
-              <td>✔️</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Writing (Concepting and word limit at 10k)</th>
-              <td>✔️</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Audio</th>
-              <td>✔️</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Producer Oversight</th>
-              <td>✔️</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Advanced Art (CGs, Backgrounds, Sprites)</th>
-              <td>❌</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Detailed Writing (Lore, Characters, higher word limit)</th>
-              <td>❌</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Advanced Audio (Sound Design, Music, higher production quality)</th>
-              <td>❌</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Advanced Programming (Ren'py advanced scripting, Better UX/UI, and Unity Programming)</th>
-              <td>❌</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Animation</th>
-              <td>❌</td>
-              <td>❌</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Voice Acting</th>
-              <td>❌</td>
-              <td>❌</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <th scope="row">Fully Customized</th>
-              <td>❌</td>
-              <td>❌</td>
-              <td>✔️</td>
-            </tr>
-          </tbody>
-        </table>
-        /
-      </div>    
-  <footer>
-    <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
-        <i class="fab fa-twitter" aria-hidden="true"></i>
-        <i class="fab fa-instagram" aria-hidden="true"></i>
-        <br>
-        <p>2023 Hentai Cooperative LLC</p>
-    </div>
-    </footer>
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
-  ></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-      AOS.init();
-  </script>
+    </section>
+    <!-- The last step -->
+    <!-- <i class="fa-solid fa-envelope fa-bounce"></i>  -->
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <div class="feature text-white rounded-3 mb-3 "><i class="fa-solid fa-envelope fa-bounce"></i></div>
+                <h2 class="fw-bolder">Get in touch</h2>
+                <p class="lead mb-0">We'd love to hear from you</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    
+                    <form id="contactForm"  
+                    action="https://formspree.io/f/mayzlqyl"
+                    method="POST">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3" data-aos="flip-left">
+                            <!-- Add an input mask -->
+
+                            <input class="form-control" id="name" type="text" name="subject" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Discord username</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A Discord username is required.</div>
+                        </div>
+                        <!-- <br>
+                        <div class="form-floating mb-3">
+                          <select name="subject" class="form-control">
+                              <option value="Visual Novel Development">Visual Novel Development</option>
+                              <option value="Web Development">Web Development</option>
+                              <option value="Talent Placement">Talent Placement</option>
+                          </select>
+                          <label for="subject">Subject</label>
+                          <br> -->
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3" data-aos="flip-right">
+                            <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <!-- Add an input mask -->
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <div class="form-floating mb-3" div data-aos="flip-up">
+                            <textarea class="form-control" id="message" type="text"  name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                        <div class="d-none" id="submitErrorMessage" data-aos="flip-down"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+<div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
+    <!-- <i class="fab fa-twitter" aria-hidden="true"></i>
+    <i class="fab fa-instagram" aria-hidden="true"></i> -->
+    <a href="terms.html">Terms & Conditions</a>
+    <br>
+    <a href="privacy.html">Privacy Policy</a>
+    <br>
+    <p>2023 Hentai Cooperative LLC</p>
+</div>
+</footer>
+<!-- MDB -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hentai Cooperative LLC",
+      "description": "Hentai Cooperative LLC: Pioneer in the eroge industry. Enjoy higher pay, a democratic culture, and become a leader.",
+      "url": "http://hentaicoop.com",
+      "logo": "http://hentaicoop.com/img/logo.png",
+      "image": "http://hentaicoop.com/img/logo.png",
+      "areaServed": "Worldwide",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Talent Placement"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Visual Novel Development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Localization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development"
+          }
+        }
+      ]
+    }
+    </script>
+<script
+  defer
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
