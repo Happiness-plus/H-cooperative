@@ -101,6 +101,11 @@ li a:hover:not(.active) {
 
 }
 
+#services h3{
+  font-family: 'libre_baskervilleregular', serif;
+
+}
+
 #talent{
   background-color: #FFDEB4;
 }
