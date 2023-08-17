@@ -1,6 +1,11 @@
 
 
 /* Nav bar stuff, might change to blue */
+    html, body {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+  }
 ul {
   list-style-type: none;
   margin: 0;
@@ -39,6 +44,7 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+
 
 #title{
   font-family: 'petit_formal_scriptregular', cursive;
