@@ -191,6 +191,13 @@ footer i {
 
 /* Media query time */
 
+@media (max-width: 450px) {
+  .table {
+      font-size: 9.5px !important;
+  }
+}
+
+
 @media only screen and (max-width: 992px) {
   #teacher{
     display: none;
