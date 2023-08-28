@@ -26,8 +26,6 @@ li a {
   text-decoration: none;
 }
 
-
-
 li a:hover:not(.active) {
   background-color: #111;
 }
@@ -43,6 +41,16 @@ li a:hover:not(.active) {
 }
 .active {
   background-color: #04AA6D;
+}
+
+.languages{
+  color: #332d2d; 
+  background-color: inherit;
+}
+
+.languages img{
+  height: 30px;
+  width: 30px;
 }
 
 
@@ -275,23 +283,6 @@ footer i {
   }
   
 }
-
-
-/* @media only screen and (min-height:667), (max-height: 823) {
-  #teacher1{
-    height: 390px !important;
-    width: 290px !important; 
-  }
-  
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 1440px) and (min-resolution: 300dpi) and (max-resolution: 600dpi) {
-  #contact{
-    margin-top: 25%;
-  }
-} */
-
-
 
 
 
