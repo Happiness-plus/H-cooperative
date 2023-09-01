@@ -179,8 +179,8 @@ li a:hover:not(.active) {
 
 
 #intro{
-  /* background-image: linear-gradient(rgba(178, 164, 255, 0.6), rgba(178, 164, 255, 0.6)), url("img/school-outside.webp"); */
-  background-image: url("img/placeholder.jpg");
+  background-image: linear-gradient(rgba(253, 247, 195, 0.6), rgba(253, 247, 195, 0.6)), url("img/placeholder.jpg");
+  /* background-image: url("img/placeholder.jpg"); */
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -188,6 +188,12 @@ li a:hover:not(.active) {
   background-size: cover;
   color: white; 
   font-weight: bolder;
+  font-family: 'petit_formal_scriptregular', cursive;
+  /* color: black; */
+}
+
+#intro h1{
+  font-size: 60px;
 }
 #talent{
   background-color: #FFDEB4;
