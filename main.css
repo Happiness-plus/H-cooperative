@@ -54,6 +54,14 @@ li a:hover:not(.active) {
 }
 /* renpy coding */
 
+.dev h1{
+  font-family: 'petit_formal_scriptregular', cursive;
+  color: black;
+  font-size: 50px;
+
+}
+
+
 .dev p{
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
@@ -82,13 +90,19 @@ li a:hover:not(.active) {
 #programmingplans{
   background-color: #FDF7C3;
   color: black;
-  height: 33%;
+  height: 30vh;
   width: 100%;
+}
+
+#programmingplans h1{
+  padding-top: 1.5%;
+  font-family: 'petit_formal_scriptregular', cursive;
+  color: black;
+  font-size: 45px;
 
 }
-#programmingplans a{
-  margin-left: 25vh;
-}
+
+
 
 
 
