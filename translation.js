@@ -95,4 +95,6 @@ window.addEventListener('click', function(event) {
   }
 });
 
+// ... (rest of the code remains unchanged)
+
   

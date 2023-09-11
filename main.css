@@ -286,6 +286,9 @@ footer i {
   max-width: 80%;
   overflow: auto;
 }
+.lightbox-content a {
+  margin: 5.2%;
+}
 
 .close-lightbox {
   position: absolute;
