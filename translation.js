@@ -5,77 +5,94 @@ const plans = [
     [{name: 'Platinum Plan', price: '$360 / Week', url: 'https://h-cooperative.myhelcim.com/hosted/?token=770d9c83f82fa7bea3e5db&recurringPlan=764aac36a10d13334870e7&amountHash=d45b57262725edae3aed936542ce65b797f973e5f5368c0562c18636f132be08'}, {name: 'Platinum+', price: '$420 / Week', url: 'https://h-cooperative.myhelcim.com/hosted/?token=770d9c83f82fa7bea3e5db&recurringPlan=9a62fb0775a2bae94a809a&amountHash=d45b57262725edae3aed936542ce65b797f973e5f5368c0562c18636f132be08'}]
 ];
 
+// Plan display functions
 function showPlans(tier, color) {
-    const planContainer = document.getElementById('plans');
-    planContainer.innerHTML = '';
-    plans[tier].forEach(plan => {
-        const a = document.createElement('a');
-        a.href = plan.url; // URL of the plan
-        a.className = 'plan-link';
-        const div = document.createElement('div');
-        div.className = 'plan';
-        div.style.backgroundColor = color; // Set background color
-        div.innerHTML = `<h2>${plan.name}</h2><p>Price: ${plan.price}</p>`;
-        a.appendChild(div);
-        planContainer.appendChild(a);
-    });
+  const planContainer = document.getElementById('plans');
+  planContainer.innerHTML = '';
+  plans[tier].forEach(plan => {
+      const a = document.createElement('a');
+      a.href = plan.url;
+      a.className = 'plan-link';
+      const div = document.createElement('div');
+      div.className = 'plan';
+      div.style.backgroundColor = color;
+      div.innerHTML = `<h2>${plan.name}</h2><p>Price: ${plan.price}</p>`;
+      a.appendChild(div);
+      planContainer.appendChild(a);
+  });
 }
 
-// Default load for Tier 1
-// showPlans(0, 'white');
-
-// Fix the flickering, shoudl've used css instead but I thought it was going to be fine. 
-
-// script.js
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('localizer').addEventListener('click', function () {
-      var contentDiv = document.getElementById('subscription');
-      if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
-        fadeIn(contentDiv);
-      } else {
-        fadeOut(contentDiv);
-      }
-    });
-  });
-  
-  function fadeIn(element) {
-    var opacity = 0;
-    element.style.display = 'block';
-    var timer = setInterval(function () {
-      if (opacity >= 1) {
-        clearInterval(timer);
-      }
+// Fade in/out functions
+function fadeIn(element) {
+  let opacity = 0;
+  element.style.display = 'block';
+  const timer = setInterval(() => {
+      if (opacity >= 1) clearInterval(timer);
       element.style.opacity = opacity;
       opacity += 0.1;
-    }, 50);
-  }
+  }, 50);
+}
 
-  function fadeOut(element) {
-    var opacity = 1;
-    var timer = setInterval(function () {
+function fadeOut(element) {
+  let opacity = 1;
+  const timer = setInterval(() => {
       if (opacity <= 0) {
-        clearInterval(timer);
-        element.style.display = 'none';
+          clearInterval(timer);
+          element.style.display = 'none';
       }
       element.style.opacity = opacity;
       opacity -= 0.1;
-    }, 50);
-  }
+  }, 50);
+}
 
-  document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('quotebutton').addEventListener('click', function () {
-      toggleDisplay('Lquote');
-    });
+// Toggle display function
+function toggleDisplay(elementId) {
+  const element = document.getElementById(elementId);
+  element.style.display = element.style.display === 'none' || element.style.display === '' ? 'block' : 'none';
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', function () {
+  // Localizer click event
+  document.getElementById('localizer').addEventListener('click', function () {
+      const contentDiv = document.getElementById('subscription');
+      contentDiv.style.display === 'none' || contentDiv.style.display === '' ? fadeIn(contentDiv) : fadeOut(contentDiv);
   });
-  
-  function toggleDisplay(elementId) {
-    var element = document.getElementById(elementId);
-    element.style.display = element.style.display === 'none' || element.style.display === '' ? 'block' : 'none';
-  }
 
-  function toggleOtherField() {
-    var otherField = document.getElementById('otherField');
-    otherField.style.display = otherField.style.display === 'none' ? 'block' : 'none';
+  // Quote button click event
+  document.getElementById('quotebutton').addEventListener('click', function () {
+      toggleDisplay('Lquote');
+  });
+
+  // Team click event
+  document.getElementById('team').addEventListener('click', function() {
+      document.getElementById('lightbox').style.display = 'block';
+  });
+
+  // Close lightbox click event
+  document.querySelector('.close-lightbox').addEventListener('click', function() {
+      document.getElementById('lightbox').style.display = 'none';
+  });
+
+  // Button active state toggle
+  const buttons = document.querySelectorAll('.interactive-btn');
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          buttons.forEach(btn => {
+              btn.classList.remove('btn-success');
+              btn.classList.add('btn-primary');
+          });
+          this.classList.remove('btn-primary');
+          this.classList.add('btn-success');
+      });
+  });
+});
+
+// Close lightbox when clicked outside content
+window.addEventListener('click', function(event) {
+  if (event.target === document.getElementById('lightbox')) {
+      document.getElementById('lightbox').style.display = 'none';
   }
-  
+});
+
   

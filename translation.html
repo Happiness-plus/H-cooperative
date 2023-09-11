@@ -65,10 +65,6 @@
               <button class="btn btn-link btn-block m-0"><a href="VNdev.html">Visual Novel Creation</a></button>
               <button class="btn btn-link btn-block m-0"><a href="dev.html">Programming</a></button>
 
-              <!-- <button class="btn btn-link btn-block m-0"><a href="goals.html">About Us</a></button>
-              <button class="btn btn-link btn-block m-0"><a href="people.html">Our People</a></button>
-              <button class="btn btn-link btn-block m-0"> <a href="values.html">Our Values</a></button> -->
-
             </div>
             </div>
         </header>
@@ -101,19 +97,27 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h1 class="container">Choose Your Localization Plan</h1>
                     <hr>
-                    <div class="container choices">
-                      <div class="row">
-                        <div class="col-md-4 mb-3">
-                          <button class="btn btn-primary w-100" id="localizer">I need a localizer</button>
+                      <div class="container choices">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <button class="btn btn-primary interactive-btn w-100" data-toggle="pill" id="localizer">I need a localizer</button>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <button class="btn btn-primary interactive-btn w-100" data-toggle="pill" id="team">I need a localization team</button>
+                                <div id="lightbox" class="lightbox">
+                                  <div class="lightbox-content">
+                                      <span class="close-lightbox">&times;</span>
+                                      <p>Your content here. This is the lightbox content.</p>
+                                  </div>
+                              </div>
+                              
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <button class="btn btn-primary interactive-btn w-100" data-toggle="pill" id="quotebutton">I need a custom quote</button>
+                            </div>
                         </div>
-                        <!-- <div class="col-md-4 mb-3">
-                          <button class="btn btn-primary w-100" id="showDivButton2">I need a localization team</button>
-                        </div> -->
-                        <div class="col-md-4 mb-3">
-                          <button class="btn btn-primary w-100" id="quotebutton">I need a custom quote</button>
-                        </div>
-                      </div>
-                    </div>                    
+                    </div>
+                                     
                     <div id="subscription" class="hoverable animate__animated animate__zoomIn">
                       <div class="tiers">
                         <button class="btn" style="background-color: white;" onclick="showPlans(0, 'white')">Basic</button>
@@ -579,4 +583,9 @@ p {
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+
+
+
 </script>
