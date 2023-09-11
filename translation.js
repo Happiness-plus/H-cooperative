@@ -69,10 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('lightbox').style.display = 'block';
   });
 
-  // Close lightbox click event
+  // buttons to close the lightbox
   document.querySelector('.close-lightbox').addEventListener('click', function() {
       document.getElementById('lightbox').style.display = 'none';
   });
+
+  document.querySelector('.card-footer').addEventListener('click', function() {
+    document.getElementById('lightbox').style.display = 'none';
+});
 
   // Button active state toggle
   const buttons = document.querySelectorAll('.interactive-btn');
