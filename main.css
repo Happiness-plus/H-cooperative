@@ -299,6 +299,7 @@ footer i {
 }
 
 
+
 #values_body{
   background-image: url("img/bedroom.png");
   height: 100vh;
@@ -312,10 +313,41 @@ footer i {
 
 /* Media query time */
 
-@media (max-width: 450px) {
+@media  (max-width: 450px) {
   .table {
       font-size: 9.5px !important;
   }
+}
+
+
+@media screen and (min-width: 351px ) and (max-width: 449px) {
+  #Lplans .table{
+    font-size: 11px !important;
+  }
+
+  #Lplans th{
+    padding: 0.5% !important;
+  }
+
+  #Lplans td{
+    padding: 0.5% !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #Lplans .table{
+    font-size: 11px !important;
+  }
+
+  #Lplans th{
+    padding: 1% !important;
+  }
+
+  #Lplans td{
+    padding: 1% !important;
+  }
+  
+
 }
 
 
