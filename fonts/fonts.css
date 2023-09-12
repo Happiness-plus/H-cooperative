@@ -11,6 +11,21 @@
 
 }
 
+#HCtitle .strokePath {
+    fill: none;
+     /* No fill for the paths that are being animated */
+    stroke: black; 
+    /* Black stroke for the animation */
+  }
+  
+  #HCtitle .fillPath {
+    fill: black; 
+    stroke: none;
+    fill-opacity: 0.5 !important;   
+  }
+
+  
+
 
 
 
