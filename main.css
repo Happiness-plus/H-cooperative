@@ -150,7 +150,7 @@ li a:hover:not(.active) {
   height: 100%;
   color: #111;
   background-color: #111;
-  /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fdf7c3' fill-opacity='0.82'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  margin-bottom: -1%;
 }
 
 #LearnMore{
@@ -179,20 +179,35 @@ li a:hover:not(.active) {
   background-color: #555;
   font-weight: bold;
 }
-
-
-#intro{
-  background-image: linear-gradient(rgba(253, 247, 195, 0.6), rgba(253, 247, 195, 0.6)), url("img/placeholder.jpg");
-  /* background-image: url("img/placeholder.jpg"); */
+/* for the dev intro */
+/* background-image: linear-gradient(rgba(253, 247, 195, 0.6), rgba(253, 247, 195, 0.6)), url("img/placeholder.jpg"); */
+#intro {
+  position: relative;
   height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white; 
   font-weight: bolder;
   font-family: 'petit_formal_scriptregular', cursive;
-  /* color: black; */
+  overflow: hidden; /* This ensures the video doesn't overflow the container */
+}
+
+#bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#intro .text-center {
+  z-index: 1; /* This ensures the text is displayed on top of the video */
 }
 
 #intro h1{
@@ -408,19 +423,7 @@ footer i {
 }
 
 
-/* @media screen and (min-width:383px), (max-width: 488px){
-  #contact{
-    margin-top: 68%;
-  }
 
-} */
-
-/* @media screen and (min-width:394px), (max-width: 488px){
-  #contact{
-    margin-top: 75%;
-  }
-
-} */
 
 @media screen and (min-width:410px) {
   #contact{
@@ -429,34 +432,6 @@ footer i {
   
 }
 
-/* my Android phone */
-/* Samsung Galaxy S9 */
-/* @media (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) {
-  #contact{
-    margin-top: 153%;
-  }
-
-}
-
-@media (min-width: 340px) and (max-width: 414px) and (min-height: 740px) and (max-height: 896px) {
-  #contact{
-    margin-top: 150%;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 414px) and (min-height: 700px) and (max-height: 740px) {
-  #contact{
-    margin-top: 150%;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 414px) and (min-height: 650px) and (max-height: 700px) {
-  #contact{
-    margin-top: 150%;
-  }
-}
-
- */
 
 
 
