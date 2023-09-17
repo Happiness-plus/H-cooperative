@@ -147,7 +147,7 @@ li a:hover:not(.active) {
 
 #services{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: #111;
   background-color: #111;
   /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fdf7c3' fill-opacity='0.82'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
@@ -376,9 +376,9 @@ footer i {
 }
 
 @media screen and (min-width:300px), (max-width: 345px){
-  #contact{
+  /* #contact{
     margin-top: 70%;
-  }
+  } */
   #teacher1{
     height: 390px;
     width: 290px; 
@@ -390,9 +390,9 @@ footer i {
 }
 
 @media screen and (min-width:300px), (max-width: 488px){
-  #contact{
+  /* #contact{
     margin-top: 70%;
-  }
+  } */
   #teacher1{
     height: 390px;
     width: 290px; 
@@ -401,26 +401,26 @@ footer i {
 
 
 @media screen and (min-width:359px), (max-width: 411px){
-  #contact{
+  /* #contact{
     margin-top: 46%;
-  }
+  } */
 
 }
 
 
-@media screen and (min-width:383px), (max-width: 488px){
+/* @media screen and (min-width:383px), (max-width: 488px){
   #contact{
     margin-top: 68%;
   }
 
-}
+} */
 
-@media screen and (min-width:394px), (max-width: 488px){
+/* @media screen and (min-width:394px), (max-width: 488px){
   #contact{
     margin-top: 75%;
   }
 
-}
+} */
 
 @media screen and (min-width:410px) {
   #contact{
@@ -431,14 +431,13 @@ footer i {
 
 /* my Android phone */
 /* Samsung Galaxy S9 */
-@media (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) {
+/* @media (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) {
   #contact{
     margin-top: 153%;
   }
 
 }
 
-/* Similar devices */
 @media (min-width: 340px) and (max-width: 414px) and (min-height: 740px) and (max-height: 896px) {
   #contact{
     margin-top: 150%;
@@ -457,7 +456,7 @@ footer i {
   }
 }
 
-
+ */
 
 
 
