@@ -51,6 +51,10 @@ li a:hover:not(.active) {
   color: #332d2d; 
   background-color: inherit;
 }
+.languages li{
+  display: block; /* Ensures each li is on a separate line */
+  margin-bottom: 20px; /* Adjust this value as needed for spacing between list items */
+}
 
 .localization{
   h1, h2, h3{
