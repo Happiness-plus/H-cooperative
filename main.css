@@ -186,7 +186,7 @@ li a:hover:not(.active) {
   height: 100vh;
   color: white; 
   font-weight: bolder;
-  font-family: 'petit_formal_scriptregular', cursive;
+  font-family: 'petit_formal_scriptregular', cursive, 'Times New Roman', serif;
   overflow: hidden; /* This ensures the video doesn't overflow the container */
 }
 
@@ -211,7 +211,7 @@ li a:hover:not(.active) {
 }
 
 #intro h1{
-  font-size: 60px;
+  font-size: 57px;
 }
 #talent{
   background-color: #FFDEB4;
@@ -332,6 +332,10 @@ footer i {
   .table {
       font-size: 9.5px !important;
   }
+  #intro h1{
+    font-size: 35px;
+  }
+
 }
 
 
