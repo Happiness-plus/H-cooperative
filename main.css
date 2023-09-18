@@ -31,7 +31,8 @@ li a:hover:not(.active) {
 }
 
 .card-header{
-  font-family: 'Libre Baskerville', serif;
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'pacificoregular', 'Arial', sans-serif;
   font-size: large;
 }
 .navbar a{
@@ -49,6 +50,13 @@ li a:hover:not(.active) {
 .languages{
   color: #332d2d; 
   background-color: inherit;
+}
+
+.localization{
+  h1, h2, h3{
+    font-family: 'pacificoregular', 'Arial', sans-serif;
+
+  }
 }
 
 .languages img{
@@ -69,10 +77,12 @@ li a:hover:not(.active) {
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   padding: 1%;
+  color: #111;
 }
 
 .dev h2{
-  font-family: 'libre_baskervilleregular', serif;
+  /* font-family: 'libre_baskervilleregular', serif; */
+  font-family: 'pacificoregular';
   /* font-size: 25px; */
   color: #111;
   padding-top: 3%;
@@ -99,7 +109,7 @@ li a:hover:not(.active) {
 
 #programmingplans h1{
   padding-top: 1.5%;
-  font-family: 'petit_formal_scriptregular', cursive;
+  font-family: 'petit_formal_scriptregular', cursive, 'Times New Roman', serif;
   color: black;
   font-size: 45px;
 
@@ -110,18 +120,20 @@ li a:hover:not(.active) {
 
 
 #title{
-  font-family: 'petit_formal_scriptregular', cursive;
+  font-family: 'petit_formal_scriptregular', cursive, 'Times New Roman', serif;
   color: black;
   font-size: 100px;
 }
 
 #vntitle{
-  font-family: 'petit_formal_scriptregular', cursive;
+  font-family: 'petit_formal_scriptregular', cursive, 'Times New Roman', serif;
   color: black;
 }
 
 #subtitle{
-  font-family: 'libre_baskervilleregular', serif;
+  /* font-family: 'libre_baskervilleregular', serif;  */
+  font-family: 'pacificoregular', 'Arial', sans-serif;
+
 }
 #teacher1{
   display: none;
@@ -160,7 +172,7 @@ li a:hover:not(.active) {
 }
 
 #services h2{
-  font-family: 'petit_formal_scriptregular', cursive;
+  font-family: 'petit_formal_scriptregular', cursive, 'Times New Roman', serif;
   font-size: 50px;
   color: white;
   background-color: #111;
@@ -168,7 +180,7 @@ li a:hover:not(.active) {
 }
 
 #services h3{
-  font-family: 'libre_baskervilleregular', serif;
+  font-family: 'pacificoregular', 'Arial', sans-serif;
 
 }
 
@@ -251,7 +263,7 @@ h2{
 }
 
 #contact h2{
-  font-family: 'petit_formal_scriptregular', cursive;
+  font-family: 'petit_formal_scriptregular', cursive, 'Times New Roman', serif;
   font-size: 50px;
 
 }
@@ -305,6 +317,12 @@ footer i {
   margin: 5.2%;
 }
 
+.dev i{
+  margin-top: 15%;
+  font-size: 50px;
+  color: #111;
+}
+
 .close-lightbox {
   position: absolute;
   top: 10px;
@@ -334,6 +352,10 @@ footer i {
   }
   #intro h1{
     font-size: 35px;
+  }
+  .dev i{
+    margin-top: 10%;
+    font-size: 40px;
   }
 
 }
