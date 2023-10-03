@@ -59,6 +59,8 @@ li a:hover:not(.active) {
 .localization{
   h1, h2, h3{
     font-family: 'pacificoregular', 'Arial', sans-serif;
+    /* can't decide of I wanna use the softer black */
+    color: black;
 
   }
 }
