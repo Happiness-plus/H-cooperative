@@ -136,11 +136,10 @@ li a:hover:not(.active) {
   color: black;
 }
 
-#subtitle{
-  /* font-family: 'libre_baskervilleregular', serif;  */
+/* #subtitle{
   font-family: 'pacificoregular', 'Arial', sans-serif;
 
-}
+} */
 #teacher1{
   display: none;
 }
@@ -470,6 +469,24 @@ footer i {
 }
 
 
+/* Localization page */
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .choices .col-md-4 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .choices .col-md-4 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .choices .col-md-4 {
+    width: 100% !important
+  }
+}
 
 
