@@ -186,6 +186,7 @@ li a:hover:not(.active) {
   color: #111;
   background-color: #FFB4B4; 
   font-weight: bolder;
+  text-transform: capitalize;
 }
 
 #services h2{
