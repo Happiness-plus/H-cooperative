@@ -43,6 +43,10 @@ li a:hover:not(.active) {
 .navbar a{
   width: 50px;
 }
+/* hyperlink title logo */
+.navbar h1 a{
+  color: #FDF7C3;
+}
 
 .navbar img{
   max-width: 99%;
