@@ -171,7 +171,19 @@ li a:hover:not(.active) {
   /* background-color: rgb(178, 164, 255, 0.6) !important; */
 }
 
+#why_us{
+  color: #fff;
+  background-color: #111;
+}
 
+#why_us i{
+  font-size: 25px;
+}
+
+#why_us h2{
+  font-family: 'petit_formal_scriptregular', cursive, 'Times New Roman', serif;
+  font-size: 50px;
+}
 
 #services{
   width: 100%;
