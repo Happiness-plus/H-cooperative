@@ -74,6 +74,27 @@ li a:hover:not(.active) {
   }
 }
 
+.localization .accordion-item{
+  color: inherit;
+  background-color: inherit;
+  font-family: var(--mdb-body-font-family);
+  font-size: var(--mdb-body-font-size);
+  font-weight: var(--mdb-body-font-weight);
+  line-height: var(--mdb-body-line-height);
+
+}
+
+.localization .accordion-header{
+  color: inherit;
+  background-color: inherit;
+  font-family: var(--mdb-body-font-family);
+  font-size: var(--mdb-body-font-size);
+  font-weight: var(--mdb-body-font-weight);
+  line-height: var(--mdb-body-line-height);
+
+}
+
+  
 .languages img{
   height: 30px;
   width: 30px;
