@@ -17,10 +17,9 @@
 <link rel="canonical" href="https://hentaicoop.com/vndev">
 <link rel="alternate" hreflang="en" href="https://hentaicoop.com/vndev">
 <link rel="alternate" hreflang="x-default" href="https://hentaicoop.com/vndev">
-<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
 <meta property="og:title" content="Visual Novel Development Services | Hentai Cooperative">
 <meta property="og:description" content="End-to-end visual novel development services for creators and studios.">
@@ -40,32 +39,28 @@
 <meta name="twitter:description" content="End-to-end visual novel development with writing, art, audio, production, programming, animation, and voice acting options.">
 <meta name="twitter:image" content="https://hentaicoop.com/img/logo.png">
 <meta name="twitter:image:alt" content="Hentai Cooperative logo">
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="performance.css?v=20260813b">
+<script src="site.js?v=20260813" defer></script>
 </head>
-<body>
-<header style="background-color: #B2A4FF; color: #FDF7C3;">
+<body class="vn-page">
+<header class="site-header">
     <nav class="navbar" >
         <div class="container-fluid">
           <!-- switch to data lazy once I get lazy loading -->
           <a href="index.html">
-            <img src="img/logo.svg" height="50px" width="50px" alt="Hentai Cooperative">
+            <img src="img/logo.svg" height="50" width="50" alt="Hentai Cooperative">
           </a>
-          <h1> <a href="index.html">Hentai Cooperative</a></h1>
+          <p class="site-brand"><a href="index.html">Hentai Cooperative</a></p>
           <!-- Former color -->
           <!-- style="color: #3777e9 ; -->
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #FDF7C3 ;"
-            data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          <button class="navbar-toggler" type="button" data-nav-toggle
+            data-nav-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
             aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+            <span class="menu-icon" aria-hidden="true"></span>
           </button>
         </div>
       </nav>
-    <div class="collapse" id="navbarToggleExternalContent"> 
+    <div class="collapse" id="navbarToggleExternalContent" hidden>
         <div class="shadow-3 p-4">
            <a class="btn btn-link btn-block m-0" href="index.html">Home</a>
             <a class="btn btn-link btn-block m-0" href="translation.html">Localization</a>
@@ -73,14 +68,10 @@
         </div>
         </div>
     </header>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+<svg class="vn-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true" focusable="false">
     <path fill="#b2a4ff" fill-opacity="1" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,122.7C840,128,960,160,1080,181.3C1200,203,1320,213,1380,218.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
   </svg>
-  <style>
-    body{
-        background-color: #FFB4B4;
-    }
-  </style>
+<main>
 <div class="container my-5">
     <h1 id="vntitle" class="container">Our Visual Novel Development Services</h1>
     <hr>
@@ -214,6 +205,7 @@
     
   </div>
   
+</main>
   <footer>
     <div class="text-center py-4 align-items-center">
       <a data-aos="zoom-out-down" href="index.html#contact" style="color: #111;
@@ -221,7 +213,7 @@
       <br>
       <br>
       <div class="container socialmedia">
-        <a href="https://twitter.com/hentaicoop" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-twitter" aria-hidden="true"></i> <span class="visually-hidden">Twitter</span></a>
+        <a href="https://twitter.com/hentaicoop" target="_blank" rel="noopener noreferrer nofollow">Follow us on X / Twitter</a>
     </div>
       <br>
         <a href="terms.html">Terms & Conditions</a>
@@ -232,14 +224,6 @@
     </div>
 </footer>
 
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
-  ></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-      AOS.init();
-  </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
