@@ -1,1 +1,22 @@
-const targets=document.querySelectorAll('img');const lazyLoad=target=>{const io=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){const img=entry.target;const src=img.getAttribute('data-lazy');img.setAttribute('src',src);img.onerror=()=>{img.src='path_to_fallback_image.jpg'};observer.disconnect()}})});io.observe(target)};targets.forEach(lazyLoad);
+const targets = document.querySelectorAll('img[data-lazy]');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      const image = entry.target;
+      image.src = image.dataset.lazy;
+      image.onerror = () => {
+        image.src = 'img/placeholder.jpg';
+      };
+      observer.unobserve(image);
+    });
+  }, { rootMargin: '200px 0px' });
+
+  targets.forEach((image) => observer.observe(image));
+} else {
+  targets.forEach((image) => {
+    image.src = image.dataset.lazy;
+  });
+}

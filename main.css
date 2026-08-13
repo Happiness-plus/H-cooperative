@@ -45,7 +45,11 @@ li a:hover:not(.active) {
 }
 /* hyperlink title logo */
 .navbar h1 a{
-  color: #FDF7C3;
+  color: #111;
+}
+
+.navbar-toggler {
+  color: #111 !important;
 }
 
 .navbar img{
@@ -473,7 +477,7 @@ footer i {
   
 }
 
-@media screen and (min-width:300px), (max-width: 345px){
+@media screen and (min-width: 300px) and (max-width: 345px) {
 
   #teacher1{
     height: 390px;
@@ -485,11 +489,22 @@ footer i {
   }
 }
 
-@media screen and (min-width:300px), (max-width: 488px){
+@media screen and (min-width: 300px) and (max-width: 488px) {
 
   #teacher1{
     height: 390px;
     width: 290px; 
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
