@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Petit Formal Script";
+  src: url("fonts/petitformalscript-regular-webfont.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --moe-lavender: #b2a4ff;
+  --moe-pink: #ffb4b4;
+  --moe-cream: #fdf7c3;
+  --moe-peach: #ffdeb4;
+  --moe-black: #111;
+}
+
+body {
+  background: var(--moe-cream);
+}
+
+/* Original lavender-tinted school scene: no cream/yellow wash. */
+#hero {
+  min-height: calc(100svh - 4.5rem);
+  background-color: var(--moe-lavender);
+  background-image:
+    linear-gradient(rgb(178 164 255 / 60%), rgb(178 164 255 / 60%)),
+    url("img/school-outside-1280.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--moe-black);
+  font-weight: 800;
+}
+
+.hero-lettering {
+  width: min(100%, 345px);
+  height: auto;
+  margin: 0 auto 0.75rem;
+  overflow: visible;
+}
+
+#subtitle {
+  color: var(--moe-black);
+}
+
+#LearnMore {
+  color: var(--moe-black);
+  background: var(--moe-pink);
+  text-transform: capitalize;
+}
+
+#LearnMore:hover {
+  color: var(--moe-black);
+  background: #ff9fa7;
+}
+
+/* Hold the rest of the hero until Vivus finishes the final cursive stroke. */
+.hero-after-writing {
+  opacity: 0;
+}
+
+#hero.is-handwriting-complete .hero-character {
+  animation: moe-fade-in-right 760ms ease-out both;
+}
+
+#hero.is-handwriting-complete .hero-copy {
+  animation: moe-fade-in-left 680ms 180ms ease-out both;
+}
+
+#hero.is-handwriting-complete .hero-cta {
+  animation: moe-zoom-in 560ms 420ms ease-out both;
+}
+
+/* Restore the original black interstitial and restrained white icons. */
+#why_us {
+  color: #fff;
+  background: var(--moe-black);
+}
+
+#why_us h2,
+#services h2,
+#contact h2 {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400 !important;
+}
+
+#why_us .icon {
+  width: auto;
+  height: auto;
+  margin-top: 1.5rem;
+  color: #fff;
+  background: transparent;
+  font-size: 1.75rem;
+}
+
+/* The four full-bleed moe color blocks from the original Our Solutions. */
+#services {
+  width: 100%;
+  padding: 0;
+  color: var(--moe-black);
+  background: var(--moe-black);
+}
+
+#services > div {
+  width: 100%;
+  max-width: none;
+}
+
+#services h2 {
+  margin: 0;
+  padding: clamp(2.5rem, 7vw, 4.5rem) 1rem;
+  color: #fff;
+  background: var(--moe-black);
+  font-size: clamp(2.7rem, 6vw, 4.75rem);
+}
+
+#services .row {
+  gap: 0;
+  margin: 0;
+}
+
+#services .col {
+  min-height: 22rem;
+  display: grid;
+  place-items: center;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 5rem);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#services .col > a {
+  width: min(100%, 39rem);
+}
+
+#services h3 {
+  margin: 0.65rem 0;
+  font-family: "Pacifico", cursive;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-weight: 400;
+}
+
+#services p {
+  margin-bottom: 0;
+  padding-inline: 0;
+  color: var(--moe-black);
+}
+
+#services .icon {
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: var(--moe-black);
+  background: transparent;
+  font-size: 2.25rem;
+}
+
+#talent {
+  background: var(--moe-peach) !important;
+}
+
+#consulting {
+  background: var(--moe-pink) !important;
+}
+
+#gamedev {
+  background: var(--moe-cream) !important;
+}
+
+#webdev {
+  background: var(--moe-lavender) !important;
+}
+
+#contact {
+  color: var(--moe-black);
+  background-color: var(--moe-peach) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239c92ac' fill-opacity='.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'/%3E%3C/svg%3E");
+}
+
+#contact .feature {
+  color: var(--moe-black);
+  background: var(--moe-pink);
+  font-size: 2rem;
+  animation: moe-envelope-bounce 1s ease-in-out infinite;
+}
+
+#submitButton {
+  color: var(--moe-black);
+  background: var(--moe-pink);
+}
+
+footer {
+  color: #fff;
+  background: var(--moe-black);
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: var(--moe-pink);
+}
+
+/* Local equivalents of the original Animate.css entrance effects. */
+.animate__animated {
+  animation-duration: 760ms;
+  animation-fill-mode: both;
+}
+
+.animate__delay-1s {
+  animation-delay: 650ms;
+}
+
+.animate__fadeInRight {
+  animation-name: moe-fade-in-right;
+}
+
+.animate__fadeInLeft {
+  animation-name: moe-fade-in-left;
+}
+
+.animate__zoomIn {
+  animation-name: moe-zoom-in;
+}
+
+@keyframes moe-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(3rem, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes moe-fade-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-3rem, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes moe-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale3d(0.75, 0.75, 0.75);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes moe-envelope-bounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  45% {
+    transform: translateY(-0.55rem) scale(1.04, 0.96);
+  }
+  65% {
+    transform: translateY(0.1rem) scale(0.98, 1.02);
+  }
+}
+
+/* Local, lightweight AOS-style reveals for the original data-aos hooks. */
+[data-aos] {
+  opacity: 0;
+  transition:
+    opacity 720ms ease,
+    transform 720ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.86);
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d(-3.5rem, 0, 0);
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d(3.5rem, 0, 0);
+}
+
+[data-aos="fade-down-right"] {
+  transform: translate3d(-2.75rem, -2.75rem, 0);
+}
+
+[data-aos="flip-left"] {
+  transform: perspective(60rem) rotateY(-65deg);
+}
+
+[data-aos="flip-right"] {
+  transform: perspective(60rem) rotateY(65deg);
+}
+
+[data-aos="flip-up"] {
+  transform: perspective(60rem) rotateX(-55deg);
+}
+
+[data-aos="flip-down"] {
+  transform: perspective(60rem) rotateX(55deg);
+}
+
+[data-aos="zoom-out-down"] {
+  transform: translate3d(0, -2.5rem, 0) scale(1.08);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 992px) {
+  #hero {
+    min-height: auto;
+    background: var(--moe-lavender);
+  }
+}
+
+@media (max-width: 767px) {
+  #services .row {
+    display: grid;
+  }
+
+  #services .col {
+    min-height: 20rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-after-writing,
+  .animate__animated,
+  [data-aos] {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  #contact .feature {
+    animation: none;
+  }
+}

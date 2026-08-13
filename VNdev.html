@@ -1,298 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Visual Novel Development Services | Hentai Cooperative</title>
-<meta name="description" content="End-to-end visual novel development with writing, art, audio, production, programming, animation, and voice acting options.">
-<meta name="author" content="Hentai Cooperative LLC">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="application-name" content="Hentai Cooperative">
-<meta name="theme-color" content="#B2A4FF">
-<meta name="color-scheme" content="light">
-<meta name="format-detection" content="telephone=no">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="canonical" href="https://hentaicoop.com/vndev">
-<link rel="alternate" hreflang="en" href="https://hentaicoop.com/vndev">
-<link rel="alternate" hreflang="x-default" href="https://hentaicoop.com/vndev">
-<link rel="icon" type="image/svg+xml" href="img/logo.svg">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="manifest" href="site.webmanifest">
-<meta property="og:title" content="Visual Novel Development Services | Hentai Cooperative">
-<meta property="og:description" content="End-to-end visual novel development services for creators and studios.">
-<meta property="og:image" content="https://hentaicoop.com/img/logo.png">
-<meta property="og:image:secure_url" content="https://hentaicoop.com/img/logo.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1563">
-<meta property="og:image:height" content="1563">
-<meta property="og:image:alt" content="Hentai Cooperative logo">
-<meta property="og:url" content="https://hentaicoop.com/vndev">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Hentai Cooperative">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@hentaicoop">
-<meta name="twitter:title" content="Visual Novel Development Services | Hentai Cooperative">
-<meta name="twitter:description" content="End-to-end visual novel development with writing, art, audio, production, programming, animation, and voice acting options.">
-<meta name="twitter:image" content="https://hentaicoop.com/img/logo.png">
-<meta name="twitter:image:alt" content="Hentai Cooperative logo">
-<link rel="stylesheet" href="performance.css?v=20260813b">
-<script src="site.js?v=20260813" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Novel Development Services | Hentai Cooperative</title>
+  <meta name="description" content="End-to-end visual novel development with writing, art, audio, production, Ren'Py programming, animation, and voice acting options.">
+  <meta name="author" content="Hentai Cooperative LLC">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="application-name" content="Hentai Cooperative">
+  <meta name="theme-color" content="#24192f">
+  <meta name="color-scheme" content="light">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://hentaicoop.com/vndev">
+  <link rel="alternate" hreflang="en" href="https://hentaicoop.com/vndev">
+  <link rel="alternate" hreflang="x-default" href="https://hentaicoop.com/vndev">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="img/teacher-720.webp" type="image/webp" fetchpriority="high">
+  <meta property="og:title" content="Visual Novel Development Services | Hentai Cooperative">
+  <meta property="og:description" content="A producer-led team for writing, art, audio, programming, animation, and complete visual novel production.">
+  <meta property="og:image" content="https://hentaicoop.com/img/logo.png">
+  <meta property="og:image:secure_url" content="https://hentaicoop.com/img/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1563">
+  <meta property="og:image:height" content="1563">
+  <meta property="og:image:alt" content="Hentai Cooperative logo">
+  <meta property="og:url" content="https://hentaicoop.com/vndev">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Hentai Cooperative">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@hentaicoop">
+  <meta name="twitter:title" content="Visual Novel Development Services | Hentai Cooperative">
+  <meta name="twitter:description" content="A producer-led team for writing, art, audio, programming, animation, and complete visual novel production.">
+  <meta name="twitter:image" content="https://hentaicoop.com/img/logo.png">
+  <meta name="twitter:image:alt" content="Hentai Cooperative logo">
+  <link rel="stylesheet" href="performance.css?v=20260813c">
+  <link rel="stylesheet" href="vndev.css?v=20260813b">
+  <script src="site.js?v=20260813c" defer></script>
+  <script src="vndev.js?v=20260813a" defer></script>
 </head>
 <body class="vn-page">
-<header class="site-header">
-    <nav class="navbar" >
-        <div class="container-fluid">
-          <!-- switch to data lazy once I get lazy loading -->
-          <a href="index.html">
-            <img src="img/logo.svg" height="50" width="50" alt="Hentai Cooperative">
-          </a>
-          <p class="site-brand"><a href="index.html">Hentai Cooperative</a></p>
-          <!-- Former color -->
-          <!-- style="color: #3777e9 ; -->
-          <button class="navbar-toggler" type="button" data-nav-toggle
-            data-nav-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="menu-icon" aria-hidden="true"></span>
-          </button>
-        </div>
-      </nav>
+  <a class="vn-skip" href="#main-content">Skip to content</a>
+
+  <header class="site-header vn-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container-fluid">
+        <a class="vn-logo" href="index.html" aria-label="Hentai Cooperative home">
+          <img src="img/logo.svg" height="50" width="50" alt="">
+        </a>
+        <p class="site-brand"><a href="index.html">Hentai Cooperative</a></p>
+        <button class="navbar-toggler" type="button" data-nav-toggle
+          data-nav-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Open navigation">
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
     <div class="collapse" id="navbarToggleExternalContent" hidden>
-        <div class="shadow-3 p-4">
-           <a class="btn btn-link btn-block m-0" href="index.html">Home</a>
-            <a class="btn btn-link btn-block m-0" href="translation.html">Localization</a>
-           <a class="btn btn-link btn-block m-0" href="dev.html">Programming</a>
-        </div>
-        </div>
-    </header>
-<svg class="vn-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true" focusable="false">
-    <path fill="#b2a4ff" fill-opacity="1" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,122.7C840,128,960,160,1080,181.3C1200,203,1320,213,1380,218.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-  </svg>
-<main>
-<div class="container my-5">
-    <h1 id="vntitle" class="container">Our Visual Novel Development Services</h1>
-    <hr>
-    <div class="row">
-        <!-- Basic Plan -->
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="card">
-            <div class="card-header text-center">Kawaii Kohai</div>
-            <div class="card-body">
-              <h4 class="card-title">$4,000</h4>
-                <!-- update this product on helcim -->
-              <!-- <h5 class="card-subtitle">Development Time: 6 Months</h5> -->
-              <p class="card-text">Studio Danza's Kawaii Kohai tier transforms first-time visual novel creators' basic ideas into immersive masterpieces with captivating characters, compelling stories, curated art and sound, user-friendly programming, all under a dedicated producer's guidance, ensuring a delightful player experience.</p>
-              <a href="https://h-cooperative.myhelcim.com/hosted/?token=9cc1a1a26deb5dc0f820db&productId=1268678&productQuantity=1&amountHash=08723ea668e0a9e465efee147d904a7cd663422d206c27aa54bbb8127aee81fb" class="btn btn-primary">Select Plan</a>
-            </div>
+      <div class="shadow-3 p-4">
+        <a class="btn btn-link btn-block m-0" href="index.html">Home</a>
+        <a class="btn btn-link btn-block m-0" href="#process">Process</a>
+        <a class="btn btn-link btn-block m-0" href="#packages">Plans</a>
+        <a class="btn btn-link btn-block m-0" href="translation.html">Localization</a>
+        <a class="btn btn-link btn-block m-0" href="dev.html">Programming</a>
+        <a class="btn btn-link btn-block m-0 vn-nav-cta" href="index.html#contact">Talk to a producer</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="vn-hero" aria-labelledby="vn-hero-title">
+      <div class="vn-hero-glow vn-hero-glow-one" aria-hidden="true"></div>
+      <div class="vn-hero-glow vn-hero-glow-two" aria-hidden="true"></div>
+      <div class="vn-shell vn-hero-grid">
+        <div class="vn-hero-copy" data-reveal="up">
+          <p class="vn-eyebrow"><span></span> End-to-end visual novel production</p>
+          <h1 id="vn-hero-title">Turn your story into a world players <em>remember.</em></h1>
+          <p class="vn-hero-lede">One coordinated creative team for writing, art, sound, production, and Ren&rsquo;Py development&mdash;built around your vision, your approvals, and your commercial rights.</p>
+          <div class="vn-hero-actions">
+            <a class="vn-button vn-button-primary" href="#packages">
+              Explore production plans
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="vn-button vn-button-quiet" href="index.html#contact">Talk with a producer</a>
           </div>
+          <ul class="vn-proof-strip" aria-label="Service advantages">
+            <li><strong>You own</strong><span>commercial rights</span></li>
+            <li><strong>Producer-led</strong><span>creative direction</span></li>
+            <li><strong>One team</strong><span>from concept to build</span></li>
+          </ul>
         </div>
-        <!-- Medium Plan -->
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="card">
-            <div class="card-header text-center">Hokage Honcho</div>
-            <div class="card-body">
-              <h4 class="card-title">$8,000</h4>
-              <!-- <h5 class="card-subtitle">Development Time: 9 Months</h5> -->
-              <p class="card-text">Experience Studio Danza's Hokage Honcho tier, your one-stop solution for crafting immersive visual novels, where our world-class artists, writers, sound designers, and programmers collaboratively transform your narrative into a captivating story experience, enriched by vivid visuals, compelling writing, atmospheric soundscapes, and intuitive UX/UI design.</p>
-              <a href="https://h-cooperative.myhelcim.com/hosted/?token=cbc95d0325a081e8a5cf23&productId=1269981&productQuantity=1&amountHash=acda7b2a16eff9439bedf6ef425c3944317c69b01bd88d975240af89d1f73a92" class="btn btn-primary">Select Plan</a>
-            </div>
-          </div>
-        </div>
-        <!-- Premium Plan -->
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="card">
-            <div class="card-header text-center">King of Kamige</div>
-            <div class="card-body">
-              <h4 class="card-title">Get a quote</h4>
-              <!-- <h5 class="card-subtitle">Development Time: Contact us </h5> -->
-              <p class="card-text">Studio Danza's King of Kamige tier offers you a custom, high-end visual novel experience with fluid animation and professional voice acting, developed by a multidisciplinary team tailoring the product to your unique specifications, promising not just a product but a fully animated, voiced, and personalized engagement that enhances brand storytelling and redefines audience engagement; for project specifics and pricing, please contact us.</p>
-              <a href="https://forms.gle/EQa65VrTVzAtaJhJ9" class="btn btn-primary">Fill out our form</a>
-            </div>
-          </div>
+
+        <div class="vn-hero-art" data-reveal="scale" aria-label="A visual novel production scene">
+          <svg class="vn-story-window" viewBox="0 0 720 720" role="img" aria-labelledby="story-window-title story-window-desc">
+            <title id="story-window-title">Visual novel scene interface</title>
+            <desc id="story-window-desc">A refined game window with a moonlit landscape, production layers, and a dialogue box.</desc>
+            <defs>
+              <linearGradient id="vnSky" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#5c4c93"/>
+                <stop offset="0.56" stop-color="#8e7dda"/>
+                <stop offset="1" stop-color="#d99cab"/>
+              </linearGradient>
+              <linearGradient id="vnGlass" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff" stop-opacity=".18"/>
+                <stop offset="1" stop-color="#fff" stop-opacity=".04"/>
+              </linearGradient>
+              <linearGradient id="vnDialogue" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f8f2d8" stop-opacity=".98"/>
+                <stop offset="1" stop-color="#fbf8f3" stop-opacity=".96"/>
+              </linearGradient>
+              <filter id="vnShadow" x="-20%" y="-20%" width="140%" height="150%">
+                <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#120c18" flood-opacity=".36"/>
+              </filter>
+              <clipPath id="vnSceneClip"><rect x="58" y="66" width="604" height="540" rx="30"/></clipPath>
+            </defs>
+            <g filter="url(#vnShadow)">
+              <rect x="38" y="44" width="644" height="582" rx="38" fill="#e8e3fa" fill-opacity=".14" stroke="#f6dde2" stroke-opacity=".55"/>
+              <rect x="58" y="66" width="604" height="540" rx="30" fill="url(#vnSky)"/>
+            </g>
+            <g clip-path="url(#vnSceneClip)">
+              <circle class="vn-moon" cx="538" cy="172" r="75" fill="#fdf7c3" opacity=".92"/>
+              <circle cx="538" cy="172" r="98" fill="none" stroke="#fdf7c3" stroke-opacity=".22" stroke-width="2"/>
+              <g class="vn-stars" fill="#fbf8f3">
+                <circle cx="148" cy="148" r="3"/><circle cx="214" cy="112" r="2"/><circle cx="293" cy="175" r="2.5"/>
+                <circle cx="405" cy="106" r="2"/><circle cx="604" cy="262" r="2.5"/><circle cx="98" cy="247" r="2"/>
+              </g>
+              <path d="M58 405C146 340 216 372 290 322C374 264 478 308 540 278C588 254 630 258 662 280V606H58Z" fill="#5c4c93" opacity=".58"/>
+              <path d="M58 458C138 420 224 436 298 394C392 340 482 405 552 362C592 338 628 342 662 358V606H58Z" fill="#24192f" opacity=".82"/>
+              <g class="vn-petals" fill="#ffb4b4">
+                <path d="M122 214c15-8 23-4 28 6-13 10-22 10-28-6Z"/>
+                <path d="M613 197c11-4 18 1 19 10-12 6-18 3-19-10Z"/>
+                <path d="M350 130c12-7 21-3 24 7-12 8-20 6-24-7Z"/>
+                <path d="M254 264c10-5 17-1 20 7-10 7-17 4-20-7Z"/>
+              </g>
+              <rect x="76" y="84" width="160" height="35" rx="17.5" fill="#24192f" fill-opacity=".52" stroke="#fff" stroke-opacity=".16"/>
+              <circle cx="99" cy="101.5" r="4" fill="#ffb4b4"/>
+              <rect x="112" y="97.5" width="92" height="8" rx="4" fill="#fff" fill-opacity=".63"/>
+              <g class="vn-layer-card">
+                <rect x="505" y="315" width="131" height="46" rx="15" fill="url(#vnGlass)" stroke="#fff" stroke-opacity=".22"/>
+                <circle cx="529" cy="338" r="9" fill="#b2a4ff"/>
+                <rect x="548" y="330" width="64" height="6" rx="3" fill="#fff" fill-opacity=".62"/>
+                <rect x="548" y="342" width="42" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/>
+              </g>
+              <g class="vn-dialogue-box">
+                <rect x="84" y="446" width="552" height="130" rx="24" fill="url(#vnDialogue)" stroke="#ffb4b4" stroke-opacity=".68"/>
+                <rect x="112" y="421" width="126" height="43" rx="17" fill="#8f5368"/>
+                <rect x="133" y="439" width="84" height="7" rx="3.5" fill="#fff" fill-opacity=".86"/>
+                <rect x="118" y="487" width="436" height="8" rx="4" fill="#24192f" fill-opacity=".72"/>
+                <rect class="vn-dialogue-line" x="118" y="510" width="382" height="8" rx="4" fill="#5c4c93" fill-opacity=".58"/>
+                <rect x="118" y="533" width="284" height="8" rx="4" fill="#8f5368" fill-opacity=".4"/>
+                <path d="m594 529 8 8 8-8" fill="none" stroke="#8f5368" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+          </svg>
+          <div class="vn-orbit vn-orbit-art" aria-hidden="true"><span>ART</span></div>
+          <div class="vn-orbit vn-orbit-code" aria-hidden="true"><span>CODE</span></div>
+          <div class="vn-orbit vn-orbit-audio" aria-hidden="true"><span>AUDIO</span></div>
+          <img class="vn-hero-character" src="img/teacher-720.webp" width="510" height="720" alt="Anime-style producer character" fetchpriority="high">
         </div>
       </div>
-  </div>
-  <div class="container">
-    <div class="table-responsive">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Visual Novel Development Services</th>
-            <th scope="col">Kawaii Kohai (Basic)</th>
-            <th scope="col">Hokage Honcho (Medium)</th>
-            <th scope="col">King of Kamige (Premium)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Art</th>
-            <td>✔️</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Programming (Ren'py programming only)</th>
-            <td>✔️</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Writing (Concepting and word limit at 10k)</th>
-            <td>✔️</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Audio</th>
-            <td>✔️</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Producer Oversight</th>
-            <td>✔️</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Advanced Art (CGs, Backgrounds, Sprites)</th>
-            <td>❌</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Detailed Writing (Lore, Characters, higher word limit)</th>
-            <td>❌</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Advanced Audio (Sound Design, Music, higher production quality)</th>
-            <td>❌</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Advanced Programming (Ren'py advanced scripting, Better UX/UI, and Unity Programming)</th>
-            <td>❌</td>
-            <td>✔️</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Animation</th>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Voice Acting</th>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✔️</td>
-          </tr>
-          <tr>
-            <th scope="row">Fully Customized</th>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✔️</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-  </div>
-  
-</main>
-  <footer>
-    <div class="text-center py-4 align-items-center">
-      <a data-aos="zoom-out-down" href="index.html#contact" style="color: #111;
-      background-color: #FFB4B4; text-transform: capitalize; font-weight: bolder; " class="btn btn-dark rounded-pill learn-more">Contact Us</a>
-      <br>
-      <br>
-      <div class="container socialmedia">
-        <a href="https://twitter.com/hentaicoop" target="_blank" rel="noopener noreferrer nofollow">Follow us on X / Twitter</a>
-    </div>
-      <br>
-        <a href="terms.html">Terms & Conditions</a>
-        <br>
-        <a href="privacy.html">Privacy Policy</a>
-        <br>
-        <p>2026 Hentai Cooperative LLC</p>
-    </div>
-</footer>
+      <div class="vn-scroll-cue" aria-hidden="true"><span></span>Scroll to enter the studio</div>
+    </section>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://hentaicoop.com/vndev#webpage",
-      "url": "https://hentaicoop.com/vndev",
-      "name": "Visual Novel Development Services | Hentai Cooperative",
-      "description": "End-to-end visual novel development with writing, art, audio, production, programming, animation, and voice acting options.",
-      "isPartOf": { "@id": "https://hentaicoop.com/#website" },
-      "about": { "@id": "https://hentaicoop.com/vndev#service" },
-      "breadcrumb": { "@id": "https://hentaicoop.com/vndev#breadcrumb" },
-      "primaryImageOfPage": { "@id": "https://hentaicoop.com/#logo" },
-      "dateModified": "2026-08-13",
-      "inLanguage": "en-US",
-      "isFamilyFriendly": false
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://hentaicoop.com/vndev#breadcrumb",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hentaicoop.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Visual Novel Development", "item": "https://hentaicoop.com/vndev" }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://hentaicoop.com/vndev#service",
-      "name": "Visual Novel Development",
-      "serviceType": "Visual novel development",
-      "description": "End-to-end visual novel development with writing, art, audio, production, programming, animation, and voice acting options.",
-      "url": "https://hentaicoop.com/vndev",
-      "provider": { "@id": "https://hentaicoop.com/#organization" },
-      "areaServed": "Worldwide",
-      "audience": { "@type": "Audience", "audienceType": "Visual novel creators and studios" },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Visual novel development plans",
+    <svg class="vn-section-divider" viewBox="0 0 1440 126" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0h1440v50c-143 55-287 70-430 45C814 62 690 22 488 54 293 85 143 113 0 82Z" fill="#24192f"/>
+      <path class="vn-divider-line" d="M0 82c143 31 293 3 488-28 202-32 326 8 522 41 143 25 287 10 430-45" fill="none" stroke="#d99cab" stroke-opacity=".76" stroke-width="2"/>
+      <g class="vn-divider-petals" fill="#ffb4b4"><path d="M320 76c13-8 23-4 27 6-12 9-21 8-27-6Z"/><path d="M1040 89c11-6 19-2 22 7-11 7-18 5-22-7Z"/><path d="M728 64c12-7 21-3 24 7-12 8-20 6-24-7Z"/></g>
+    </svg>
+
+    <section class="vn-intro" aria-labelledby="vn-intro-title">
+      <div class="vn-shell vn-intro-grid">
+        <div data-reveal="up">
+          <p class="vn-kicker">A complete creative pipeline</p>
+          <h2 id="vn-intro-title">Every discipline, moving in the same direction.</h2>
+        </div>
+        <div data-reveal="up" data-reveal-delay="1">
+          <p>Visual novels become exceptional when story, art, sound, and interaction reinforce one another. Our cooperative model brings those disciplines together under a dedicated producer, so every creative choice serves one coherent experience.</p>
+          <a class="vn-text-link" href="#process">See how the process works <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-capabilities" aria-labelledby="capabilities-title">
+      <div class="vn-shell">
+        <div class="vn-section-heading" data-reveal="up">
+          <p class="vn-kicker">Built under one roof</p>
+          <h2 id="capabilities-title">From first line to final build.</h2>
+          <p>Choose a complete production package or assemble the exact disciplines your project needs.</p>
+        </div>
+
+        <div class="vn-bento">
+          <article class="vn-capability vn-capability-featured" data-reveal="up">
+            <div class="vn-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M10 35 13.5 13 36 9.5 32.5 32 20 36Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m20 36-4 6-2-7-7-2 6-4M28 16l-9 12M26 19l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="vn-card-label">Narrative foundation</p>
+            <h3>Writing &amp; worldbuilding</h3>
+            <p>Concept development, character voice, branching narrative, scene direction, and lore designed for interactive storytelling.</p>
+            <ul><li>Story architecture</li><li>Character development</li><li>Branching scripts</li></ul>
+            <svg class="vn-card-flourish" viewBox="0 0 180 90" aria-hidden="true"><path d="M8 76c27-50 67-50 82 0 16-49 57-48 82 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="90" cy="33" r="7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </article>
+
+          <article class="vn-capability" data-reveal="up" data-reveal-delay="1">
+            <div class="vn-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 34c7-1 8-8 9-15l14-8c5 6 8 13 9 21-10 7-21 8-32 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M17 19c5 0 9 3 11 8M13 30c7 2 13 1 18-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="17" r="2" fill="currentColor"/></svg>
+            </div>
+            <p class="vn-card-label">Visual identity</p>
+            <h3>Art direction</h3>
+            <p>Character sprites, CGs, backgrounds, and interfaces shaped into a consistent visual language.</p>
+          </article>
+
+          <article class="vn-capability" data-reveal="up" data-reveal-delay="2">
+            <div class="vn-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 13h32v23H8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m18 20-5 5 5 5m12-10 5 5-5 5m-4-13-5 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="vn-card-label">Playable craft</p>
+            <h3>Ren&rsquo;Py development</h3>
+            <p>Branching logic, saves, galleries, custom screens, polished UX, animation, and release-ready builds.</p>
+          </article>
+
+          <article class="vn-capability" data-reveal="up">
+            <div class="vn-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M11 29V18a13 13 0 0 1 26 0v11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 27H7v11h8V27Zm26 0h4v11h-8V27Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M33 38c-2 4-5 5-9 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <p class="vn-card-label">Atmosphere</p>
+            <h3>Audio &amp; voice</h3>
+            <p>Music, sound design, implementation, and optional voice acting that support the emotional rhythm of every scene.</p>
+          </article>
+
+          <article class="vn-capability vn-capability-wide" data-reveal="up" data-reveal-delay="1">
+            <div class="vn-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 13v12l8 5M11 14l4-4m22 4-4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 5h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <p class="vn-card-label">Creative continuity</p>
+              <h3>Producer oversight</h3>
+              <p>One point of coordination aligns milestones, feedback, staffing, and handoffs across the entire production.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-process" id="process" aria-labelledby="process-title">
+      <div class="vn-shell">
+        <div class="vn-section-heading vn-section-heading-light" data-reveal="up">
+          <p class="vn-kicker">A clear path through production</p>
+          <h2 id="process-title">The journey from spark to shipped story.</h2>
+          <p>Milestones keep the work tangible, reviewable, and moving forward.</p>
+        </div>
+        <div class="vn-process-track" data-reveal="up">
+          <svg class="vn-process-line" viewBox="0 0 1000 70" preserveAspectRatio="none" aria-hidden="true"><path d="M20 38c138-33 222 30 345 4 132-28 217-25 327 2 106 26 186-22 288-8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="8 10" stroke-linecap="round"/></svg>
+          <ol class="vn-process-list">
+            <li><span class="vn-step-number">01</span><h3>Discover</h3><p>We clarify the audience, scope, creative north star, and constraints.</p></li>
+            <li><span class="vn-step-number">02</span><h3>Design</h3><p>Story, visual language, systems, and production milestones take shape.</p></li>
+            <li><span class="vn-step-number">03</span><h3>Create</h3><p>Our specialists build in coordinated sprints with producer oversight.</p></li>
+            <li><span class="vn-step-number">04</span><h3>Refine</h3><p>Your review gates guide polish, integration, testing, and final delivery.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-packages" id="packages" aria-labelledby="packages-title">
+      <div class="vn-shell">
+        <div class="vn-section-heading" data-reveal="up">
+          <p class="vn-kicker">Production plans</p>
+          <h2 id="packages-title">Choose the scale of your story.</h2>
+          <p>Every plan starts with the same principle: cohesive creative direction and a build you can own.</p>
+        </div>
+
+        <div class="vn-package-grid">
+          <article class="vn-package" data-reveal="up">
+            <div class="vn-package-topline"><span>Essential</span><span>01</span></div>
+            <h3>Kawaii Kohai</h3>
+            <p class="vn-package-for">A focused foundation for first-time creators and compact concepts.</p>
+            <p class="vn-price"><span>Starting at</span>$4,000</p>
+            <ul class="vn-feature-list">
+              <li>Core art production</li><li>Ren&rsquo;Py programming</li><li>Concept and writing support</li><li>Audio direction</li><li>Producer oversight</li>
+            </ul>
+            <a class="vn-button vn-button-outline" href="https://h-cooperative.myhelcim.com/hosted/?token=9cc1a1a26deb5dc0f820db&amp;productId=1268678&amp;productQuantity=1&amp;amountHash=08723ea668e0a9e465efee147d904a7cd663422d206c27aa54bbb8127aee81fb">Select Kawaii Kohai <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="vn-package vn-package-featured" data-reveal="up" data-reveal-delay="1">
+            <div class="vn-package-badge">Most complete fixed plan</div>
+            <div class="vn-package-topline"><span>Expanded</span><span>02</span></div>
+            <h3>Hokage Honcho</h3>
+            <p class="vn-package-for">For richer worlds that need advanced craft across every core discipline.</p>
+            <p class="vn-price"><span>Starting at</span>$8,000</p>
+            <ul class="vn-feature-list">
+              <li>Advanced art and CG production</li><li>Deeper lore and character writing</li><li>Advanced audio and sound design</li><li>Custom UX and programming</li><li>Producer oversight</li>
+            </ul>
+            <a class="vn-button vn-button-primary" href="https://h-cooperative.myhelcim.com/hosted/?token=cbc95d0325a081e8a5cf23&amp;productId=1269981&amp;productQuantity=1&amp;amountHash=acda7b2a16eff9439bedf6ef425c3944317c69b01bd88d975240af89d1f73a92">Select Hokage Honcho <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="vn-package" data-reveal="up" data-reveal-delay="2">
+            <div class="vn-package-topline"><span>Bespoke</span><span>03</span></div>
+            <h3>King of Kamige</h3>
+            <p class="vn-package-for">A fully customized production for ambitious, animated, and voiced experiences.</p>
+            <p class="vn-price vn-price-quote"><span>Built to your scope</span>Custom quote</p>
+            <ul class="vn-feature-list">
+              <li>Everything in Hokage Honcho</li><li>Fluid animation</li><li>Professional voice acting</li><li>Fully customized production</li><li>Dedicated multidisciplinary team</li>
+            </ul>
+            <a class="vn-button vn-button-outline" href="https://forms.gle/EQa65VrTVzAtaJhJ9">Request a custom quote <span aria-hidden="true">&rarr;</span></a>
+          </article>
+        </div>
+        <p class="vn-package-note" data-reveal="up">Not sure which plan fits? <a href="index.html#contact">Tell us what you are building</a> and we&rsquo;ll help you choose.</p>
+      </div>
+    </section>
+
+    <section class="vn-comparison" id="compare" aria-labelledby="compare-title">
+      <div class="vn-shell">
+        <div class="vn-section-heading" data-reveal="up">
+          <p class="vn-kicker">At a glance</p>
+          <h2 id="compare-title">Compare production depth.</h2>
+        </div>
+        <div class="vn-table-wrap" data-reveal="up" tabindex="0" role="region" aria-label="Scrollable plan comparison">
+          <table class="vn-table">
+            <caption class="visually-hidden">Features included in each visual novel development plan</caption>
+            <thead><tr><th scope="col">Capability</th><th scope="col">Kawaii Kohai<small>Essential</small></th><th scope="col">Hokage Honcho<small>Expanded</small></th><th scope="col">King of Kamige<small>Bespoke</small></th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Art</th><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Ren&rsquo;Py programming</th><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Writing <small>Concepting, up to 10k words</small></th><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Audio</th><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Producer oversight</th><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Advanced art <small>CGs, backgrounds, sprites</small></th><td><span class="vn-no">&mdash;</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Detailed writing <small>Lore, characters, expanded word count</small></th><td><span class="vn-no">&mdash;</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Advanced audio <small>Sound design and music</small></th><td><span class="vn-no">&mdash;</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Advanced programming <small>Custom UX and Unity options</small></th><td><span class="vn-no">&mdash;</span></td><td><span class="vn-yes">Included</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Animation</th><td><span class="vn-no">&mdash;</span></td><td><span class="vn-no">&mdash;</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Voice acting</th><td><span class="vn-no">&mdash;</span></td><td><span class="vn-no">&mdash;</span></td><td><span class="vn-yes">Included</span></td></tr>
+              <tr><th scope="row">Fully customized</th><td><span class="vn-no">&mdash;</span></td><td><span class="vn-no">&mdash;</span></td><td><span class="vn-yes">Included</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="vn-swipe-note">Swipe horizontally to compare all plans.</p>
+      </div>
+    </section>
+
+    <section class="vn-trust" aria-labelledby="trust-title">
+      <div class="vn-shell vn-trust-grid">
+        <div class="vn-trust-copy" data-reveal="up">
+          <p class="vn-kicker">A safer way to build</p>
+          <h2 id="trust-title">Your vision stays yours. The production never depends on one person.</h2>
+          <p>We coordinate specialists as a cooperative, with approval gates and backup talent designed to keep your project moving without giving up creative ownership.</p>
+          <a class="vn-text-link" href="index.html#why_us">Why creators choose the cooperative <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="vn-trust-points">
+          <article data-reveal="up"><span>01</span><div><h3>Commercial rights remain yours</h3><p>Ownership expectations are established before production begins.</p></div></article>
+          <article data-reveal="up" data-reveal-delay="1"><span>02</span><div><h3>Approval before creator payment</h3><p>Review gates keep you actively involved in the work you receive.</p></div></article>
+          <article data-reveal="up" data-reveal-delay="2"><span>03</span><div><h3>Backup creators are available</h3><p>A wider talent network reduces dependence on a single contributor.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-faq" aria-labelledby="faq-title">
+      <div class="vn-shell vn-faq-grid">
+        <div class="vn-faq-heading" data-reveal="up">
+          <p class="vn-kicker">Before we begin</p>
+          <h2 id="faq-title">Good questions make better games.</h2>
+          <p>Have something more specific in mind? A producer can help you map the right path.</p>
+          <a class="vn-button vn-button-quiet" href="index.html#contact">Ask us anything</a>
+        </div>
+        <div class="vn-faq-list" data-reveal="up" data-reveal-delay="1">
+          <details><summary>Can you start from only an idea?<span aria-hidden="true"></span></summary><p>Yes. The Kawaii Kohai plan is designed to help shape an early concept into a focused visual novel foundation with writing, art, audio, programming, and producer guidance.</p></details>
+          <details><summary>Can you join a project already in development?<span aria-hidden="true"></span></summary><p>Yes. We can evaluate the existing scripts, assets, code, and production gaps, then recommend a complete package or the specific disciplines needed to finish the work.</p></details>
+          <details><summary>Do I retain the commercial rights?<span aria-hidden="true"></span></summary><p>Yes. The cooperative establishes ownership expectations in a pre-work contract so the commercial rights to the commissioned game remain with you.</p></details>
+          <details><summary>What makes the custom plan different?<span aria-hidden="true"></span></summary><p>King of Kamige expands beyond the fixed plans with a tailored scope, including options such as fluid animation, professional voice acting, and a fully customized multidisciplinary production.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-final-cta" aria-labelledby="cta-title">
+      <div class="vn-final-stars" aria-hidden="true"></div>
+      <div class="vn-shell vn-final-inner" data-reveal="up">
+        <p class="vn-kicker">Your opening scene starts here</p>
+        <h2 id="cta-title">Bring us the idea you can&rsquo;t stop thinking about.</h2>
+        <p>We&rsquo;ll help you turn it into a practical production plan&mdash;and then into a visual novel players can enter.</p>
+        <div class="vn-hero-actions">
+          <a class="vn-button vn-button-primary" href="index.html#contact">Start a conversation <span aria-hidden="true">&rarr;</span></a>
+          <a class="vn-button vn-button-quiet" href="#packages">Review plans</a>
+        </div>
+      </div>
+      <svg class="vn-final-moon" viewBox="0 0 260 260" aria-hidden="true"><circle cx="130" cy="130" r="94" fill="none" stroke="currentColor" stroke-opacity=".14"/><circle cx="130" cy="130" r="68" fill="none" stroke="currentColor" stroke-opacity=".22"/><path d="M158 51a84 84 0 1 0 53 117 72 72 0 1 1-53-117Z" fill="currentColor" fill-opacity=".12"/></svg>
+    </section>
+  </main>
+
+  <footer class="vn-footer">
+    <div class="vn-shell vn-footer-grid">
+      <div><a class="vn-footer-brand" href="index.html"><img src="img/logo.svg" width="42" height="42" alt="">Hentai Cooperative</a><p>Creator-first production for unforgettable visual novels.</p></div>
+      <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="translation.html">Localization</a><a href="dev.html">Programming</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+      <div class="vn-footer-social"><a href="https://twitter.com/hentaicoop" target="_blank" rel="noopener noreferrer nofollow">X / Twitter <span aria-hidden="true">&nearr;</span></a><p>&copy; 2026 Hentai Cooperative LLC</p></div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://hentaicoop.com/vndev#webpage",
+        "url": "https://hentaicoop.com/vndev",
+        "name": "Visual Novel Development Services | Hentai Cooperative",
+        "description": "End-to-end visual novel development with writing, art, audio, production, programming, animation, and voice acting options.",
+        "isPartOf": { "@id": "https://hentaicoop.com/#website" },
+        "about": { "@id": "https://hentaicoop.com/vndev#service" },
+        "breadcrumb": { "@id": "https://hentaicoop.com/vndev#breadcrumb" },
+        "primaryImageOfPage": { "@id": "https://hentaicoop.com/#logo" },
+        "dateModified": "2026-08-13",
+        "inLanguage": "en-US",
+        "isFamilyFriendly": false
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://hentaicoop.com/vndev#breadcrumb",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Kawaii Kohai",
-            "price": "4000",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://h-cooperative.myhelcim.com/hosted/?token=9cc1a1a26deb5dc0f820db&productId=1268678&productQuantity=1&amountHash=08723ea668e0a9e465efee147d904a7cd663422d206c27aa54bbb8127aee81fb",
-            "itemOffered": { "@type": "Service", "name": "Kawaii Kohai visual novel development plan" }
-          },
-          {
-            "@type": "Offer",
-            "name": "Hokage Honcho",
-            "price": "8000",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://h-cooperative.myhelcim.com/hosted/?token=cbc95d0325a081e8a5cf23&productId=1269981&productQuantity=1&amountHash=acda7b2a16eff9439bedf6ef425c3944317c69b01bd88d975240af89d1f73a92",
-            "itemOffered": { "@type": "Service", "name": "Hokage Honcho visual novel development plan" }
-          },
-          {
-            "@type": "Offer",
-            "name": "King of Kamige custom quote",
-            "url": "https://forms.gle/EQa65VrTVzAtaJhJ9",
-            "itemOffered": { "@type": "Service", "name": "King of Kamige custom visual novel development plan" }
-          }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hentaicoop.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Visual Novel Development", "item": "https://hentaicoop.com/vndev" }
         ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://hentaicoop.com/vndev#service",
+        "name": "Visual Novel Development",
+        "serviceType": "Visual novel development",
+        "description": "End-to-end visual novel development with writing, art, audio, production, programming, animation, and voice acting options.",
+        "url": "https://hentaicoop.com/vndev",
+        "provider": { "@id": "https://hentaicoop.com/#organization" },
+        "areaServed": "Worldwide",
+        "audience": { "@type": "Audience", "audienceType": "Visual novel creators and studios" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Visual novel development plans",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Kawaii Kohai",
+              "price": "4000",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://h-cooperative.myhelcim.com/hosted/?token=9cc1a1a26deb5dc0f820db&productId=1268678&productQuantity=1&amountHash=08723ea668e0a9e465efee147d904a7cd663422d206c27aa54bbb8127aee81fb",
+              "itemOffered": { "@type": "Service", "name": "Kawaii Kohai visual novel development plan" }
+            },
+            {
+              "@type": "Offer",
+              "name": "Hokage Honcho",
+              "price": "8000",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://h-cooperative.myhelcim.com/hosted/?token=cbc95d0325a081e8a5cf23&productId=1269981&productQuantity=1&amountHash=acda7b2a16eff9439bedf6ef425c3944317c69b01bd88d975240af89d1f73a92",
+              "itemOffered": { "@type": "Service", "name": "Hokage Honcho visual novel development plan" }
+            },
+            {
+              "@type": "Offer",
+              "name": "King of Kamige custom quote",
+              "url": "https://forms.gle/EQa65VrTVzAtaJhJ9",
+              "itemOffered": { "@type": "Service", "name": "King of Kamige custom visual novel development plan" }
+            }
+          ]
+        }
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 </body>
 </html>
